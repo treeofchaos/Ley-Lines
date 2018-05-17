@@ -1,0 +1,5 @@
+{
+    "variants": {
+        "normal": { "model": "tl:taqa_ore_block" }
+    }
+}

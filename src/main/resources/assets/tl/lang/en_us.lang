@@ -1,0 +1,5 @@
+item.taqa_ingot.name=Taqa Ingot
+item.taqa_pickaxe.name=Taqa Pickaxe
+item.charged_taqa_ingot.name=Charged Taqa Ingot
+//blocks
+tile.taqa_ore_block.name=Taqa Ore
