@@ -1,5 +1,11 @@
 item.taqa_ingot.name=Taqa Ingot
 item.taqa_pickaxe.name=Taqa Pickaxe
 item.charged_taqa_ingot.name=Charged Taqa Ingot
+item.qua_ingot.name=Qua Ingot
+item.lwh_ingot.name=Lwh Ingot
+item.aljahim_ingot.name=Aljahim Ingot
+item.aljahim_sword.name=Qua Sword
+item.qua_axe.name=Rwh Axe
 //blocks
 tile.taqa_ore_block.name=Taqa Ore
+tile.quartzite_block.name=Quartzite
