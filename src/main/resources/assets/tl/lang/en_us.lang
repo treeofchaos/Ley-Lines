@@ -11,3 +11,6 @@ item.aljahim_arrow.name=Aljahim Arrow
 //blocks
 tile.taqa_ore_block.name=Taqa Ore
 tile.quartzite_block.name=Quartzite
+tile.aljahim_block.name=Aljahim Block
+tile.qua_block.name=Qua Block
+tile.rwh_block.name=Rwh Block

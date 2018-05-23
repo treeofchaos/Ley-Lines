@@ -24,7 +24,7 @@ public class ModItems
 	//tool materials
 	public static final ToolMaterial TOOL_TAQA = EnumHelper.addToolMaterial("tool_taqa", 3, 1267, 10.0f, 7.0f, 30);
 	public static final ToolMaterial TOOL_QUA = EnumHelper.addToolMaterial("tool_qua", 2, 1567, 9.5f, 8.0f, 40);
-	public static final ToolMaterial TOOL_LWH = EnumHelper.addToolMaterial("tool_lwh", 4, 1467, 11.0f, 9.0f, 35);
+	public static final ToolMaterial TOOL_RWH = EnumHelper.addToolMaterial("tool_rwh", 4, 1467, 11.0f, 9.0f, 35);
 	public static final ToolMaterial TOOL_ALJAHIM = EnumHelper.addToolMaterial("tool_aljahim", 4, 2000, 10.5f, 13.0f, 25);
 	
 	//items
@@ -38,7 +38,7 @@ public class ModItems
 	//tools
 	public static final ItemPickaxe TAQA_PICKAXE = new ToolPickaxe("taqa_pickaxe", TOOL_TAQA);
 	public static final ItemSword QUA_SWORD = new ToolSword("qua_sword", TOOL_QUA);
-	public static final ItemAxe RWH_AXE = new ToolAxe("rwh_axe", TOOL_LWH);
+	public static final ItemAxe RWH_AXE = new ToolAxe("rwh_axe", TOOL_RWH);
 	public static final ItemBow ALJAHIM_BOW = new ToolBow("aljahim_bow", TOOL_ALJAHIM);
 	public static final ItemArrow ALJAHIM_ARROW = new ToolArrow("aljahim_arrow", TOOL_ALJAHIM);
 	
