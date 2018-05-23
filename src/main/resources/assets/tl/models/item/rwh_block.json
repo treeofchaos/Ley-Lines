@@ -1,6 +1,3 @@
 {
-   "parent": "item/generated",
-   "textures": {
-       "layer0": "tl:items/rwh_block"
-   }
+   "parent": "tl:block/rwh_block"
 }
