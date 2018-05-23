@@ -1,17 +1,25 @@
 package com.tree_of_chaos.LeyLines.tools;
+import javax.annotation.Nullable;
+
 import com.tree_of_chaos.LeyLines.Main;
 import com.tree_of_chaos.LeyLines.init.ModItems;
 import com.tree_of_chaos.LeyLines.util.IHasModel;
 import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemArrow;
 import net.minecraft.item.ItemBow;
 import net.minecraft.item.ItemStack;
+import net.minecraft.item.EnumAction;
+import net.minecraft.item.IItemPropertyGetter;
 import net.minecraft.item.Item.ToolMaterial;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.EnumActionResult;
 import net.minecraft.util.EnumHand;
+import net.minecraft.util.ResourceLocation;
 import net.minecraft.world.World;
+import net.minecraftforge.fml.relauncher.Side;
+import net.minecraftforge.fml.relauncher.SideOnly;
 public class ToolBow extends ItemBow implements IHasModel 
 {
 	public ToolBow(String name, ToolMaterial material)
@@ -20,12 +28,34 @@ public class ToolBow extends ItemBow implements IHasModel
 		setRegistryName(name);
 		setCreativeTab(CreativeTabs.COMBAT);
 		ModItems.ITEMS.add(this);
-		
+
+		this.addPropertyOverride(new ResourceLocation("pull"), new IItemPropertyGetter()
+		{
+			@SideOnly(Side.CLIENT)
+			public float apply(ItemStack stack, @Nullable World worldIn, @Nullable EntityLivingBase entityIn)
+			{
+				return entityIn == null ? 0.0F
+						: ((entityIn.getActiveItemStack().getItem() instanceof ToolBow) == false ? 0.0F
+								: (float) (stack.getMaxItemUseDuration() - entityIn.getItemInUseCount()) / 20.0F);
+			}
+		});
+		this.addPropertyOverride(new ResourceLocation("pulling"), new IItemPropertyGetter()
+		{
+			@SideOnly(Side.CLIENT)
+			public float apply(ItemStack stack, @Nullable World worldIn, @Nullable EntityLivingBase entityIn)
+			{
+				return entityIn != null && entityIn.isHandActive() && entityIn.getActiveItemStack() == stack ? 1.0F
+						: 0.0F;
+			}
+		});
 	}
+	
 	public void registerModels() 
 	{
 		Main.proxy.registerItemRenderer(this,0,"inventory");
 	}
+	
+	
     private ItemStack findAmmo(EntityPlayer player)
     {
         if (this.isArrow(player.getHeldItem(EnumHand.OFF_HAND)))
@@ -51,26 +81,15 @@ public class ToolBow extends ItemBow implements IHasModel
             return ItemStack.EMPTY;
         }
     }
+    
     protected boolean isArrow(ItemStack stack)
     {
         return stack.getItem() instanceof ToolArrow;
     }
-	public ActionResult<ItemStack> onItemRightClick(World worldIn, EntityPlayer playerIn, EnumHand handIn)
-    {
-        ItemStack itemstack = playerIn.getHeldItem(handIn);
-        boolean flag = !this.findAmmo(playerIn).isEmpty();
-
-        ActionResult<ItemStack> ret = net.minecraftforge.event.ForgeEventFactory.onArrowNock(itemstack, worldIn, playerIn, handIn, flag);
-        if (ret != null) return ret;
-
-        if (!playerIn.capabilities.isCreativeMode && !flag)
-        {
-            return flag ? new ActionResult(EnumActionResult.PASS, itemstack) : new ActionResult(EnumActionResult.FAIL, itemstack);
-        }
-        else
-        {
-            playerIn.setActiveHand(handIn);
-            return new ActionResult<ItemStack>(EnumActionResult.SUCCESS, itemstack);
-        }
-    }
+    
+	@Override
+	public EnumAction getItemUseAction(ItemStack par1ItemStack)
+	{
+		return EnumAction.BOW;
+	}
 }

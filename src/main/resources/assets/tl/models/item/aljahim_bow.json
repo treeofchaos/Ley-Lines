@@ -2,5 +2,27 @@
    "parent": "item/handheld",
    "textures": {
        "layer0": "tl:items/aljahim_bow"
-   }
+   },
+       "overrides": [
+        {
+            "predicate": {
+                "pulling": 1
+            },
+            "model": "tl:items/aljahim_bow_charging1"
+        },
+        {
+            "predicate": {
+                "pulling": 1,
+                "pull": 0.65
+            },
+            "model": "tl:items/aljahim_bow_charging2"
+        },
+        {
+            "predicate": {
+                "pulling": 1,
+                "pull": 0.9
+            },
+            "model": "tl:items/aljahim_bow_charging3"
+        }
+    ]
 }
