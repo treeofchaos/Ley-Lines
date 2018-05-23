@@ -1,6 +1,0 @@
-{
-   "parent": "tl:item/aljahim_bow",
-   "textures": {
-       "layer0": "tl:items/aljahim_bow_charging2"
-   }
-}
