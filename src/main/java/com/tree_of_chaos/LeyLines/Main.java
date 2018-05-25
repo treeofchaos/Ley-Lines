@@ -1,8 +1,12 @@
 package com.tree_of_chaos.LeyLines;
+import com.tree_of_chaos.LeyLines.init.ModBlocks;
+import com.tree_of_chaos.LeyLines.init.ModItems;
 import com.tree_of_chaos.LeyLines.init.ModRecipes;
 import com.tree_of_chaos.LeyLines.proxy.CommonProxy;
 import com.tree_of_chaos.LeyLines.util.Reference;
 import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.init.Blocks;
+import net.minecraft.item.ItemStack;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.SidedProxy;
@@ -31,4 +35,10 @@ public class Main
 	{
 		
 	}
+    public static CreativeTabs creativeTab = new CreativeTabs("leylines") {
+        @Override
+        public ItemStack getTabIconItem() {
+            return new ItemStack(ModItems.TAQA_INGOT);
+        }
+    };
 }	

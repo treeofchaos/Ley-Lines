@@ -2,7 +2,7 @@ item.taqa_ingot.name=Taqa Ingot
 item.taqa_pickaxe.name=Taqa Pickaxe
 item.charged_taqa_ingot.name=Charged Taqa Ingot
 item.qua_ingot.name=Qua Ingot
-item.lwh_ingot.name=Lwh Ingot
+item.rwh_ingot.name=Lwh Ingot
 item.aljahim_ingot.name=Aljahim Ingot
 item.qua_sword.name=Qua Sword
 item.rwh_axe.name=Rwh Axe
@@ -14,3 +14,6 @@ tile.quartzite_block.name=Quartzite
 tile.aljahim_block.name=Aljahim Block
 tile.qua_block.name=Qua Block
 tile.rwh_block.name=Rwh Block
+tile.taqa_block.name=Taqa Block
+//creative tab
+itemGroup.leylines=Ley Lines

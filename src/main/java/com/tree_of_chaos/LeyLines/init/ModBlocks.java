@@ -13,4 +13,5 @@ public class ModBlocks
 	public static final Block ALJAHIM_BLOCK = new BlockBase("aljahim_block", Material.IRON);
 	public static final Block QUA_BLOCK = new BlockBase("qua_block", Material.IRON);
 	public static final Block RWH_BLOCK = new BlockBase("rwh_block", Material.IRON);
+	public static final Block TAQA_BLOCK = new BlockBase("taqa_block", Material.IRON);
 }

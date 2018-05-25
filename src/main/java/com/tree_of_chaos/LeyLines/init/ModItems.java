@@ -22,9 +22,9 @@ import net.minecraftforge.common.util.EnumHelper;
 public class ModItems 
 {
 	//tool materials
-	public static final ToolMaterial TOOL_TAQA = EnumHelper.addToolMaterial("tool_taqa", 3, 1267, 10.0f, 7.0f, 30);
+	public static final ToolMaterial TOOL_TAQA = EnumHelper.addToolMaterial("tool_taqa", 4, 1267, 10.0f, 7.0f, 30);
 	public static final ToolMaterial TOOL_QUA = EnumHelper.addToolMaterial("tool_qua", 2, 1567, 9.5f, 8.0f, 40);
-	public static final ToolMaterial TOOL_RWH = EnumHelper.addToolMaterial("tool_rwh", 4, 1467, 11.0f, 9.0f, 35);
+	public static final ToolMaterial TOOL_RWH = EnumHelper.addToolMaterial("tool_rwh", 4, 1467, 20.0f, 9.0f, 35);
 	public static final ToolMaterial TOOL_ALJAHIM = EnumHelper.addToolMaterial("tool_aljahim", 4, 2000, 10.5f, 13.0f, 25);
 	
 	//items
@@ -43,6 +43,6 @@ public class ModItems
 	public static final ItemArrow ALJAHIM_ARROW = new ToolArrow("aljahim_arrow", TOOL_ALJAHIM);
 	
 	//armor
-
+	
 }
 		

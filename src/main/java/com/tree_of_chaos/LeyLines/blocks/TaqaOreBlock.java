@@ -1,4 +1,6 @@
 package com.tree_of_chaos.LeyLines.blocks;
+import com.tree_of_chaos.LeyLines.Main;
+
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 public class TaqaOreBlock extends BlockBase
@@ -12,6 +14,7 @@ public class TaqaOreBlock extends BlockBase
 		setResistance(18000000.0f);
 		setHarvestLevel("pickaxe", 2);
 		setLightLevel(8.0f);
+		setCreativeTab(Main.creativeTab);
 	}
 
 }
