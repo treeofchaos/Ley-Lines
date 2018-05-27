@@ -1,0 +1,11 @@
+{
+   "parent": "block/cube",
+   "textures": {
+       "up": "tl:blocks/quartzite_pillar_top",
+       "north": "tl:blocks/quartzite_side_pillar",
+       "south": "tl:blocks/quartzite_side_pillar",
+       "east": "tl:blocks/quartzite_side_pillar",
+       "west": "tl:blocks/quartzite_side_pillar",
+       "down": "tl:blocks/quartzite_pillar_top"
+   }
+}
