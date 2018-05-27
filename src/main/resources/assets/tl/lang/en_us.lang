@@ -15,5 +15,11 @@ tile.aljahim_block.name=Aljahim Block
 tile.qua_block.name=Qua Block
 tile.rwh_block.name=Rwh Block
 tile.taqa_block.name=Taqa Block
+tile.quartzite_bricks.name=Quartzite Bricks
+tile.quartzite_chiseled.name=Chiseled Quartzite
+tile.quartzite_pillar.name=Quartzite Pillar
+tile.quartzite_polished.name=Polished Quartzite
+tile.quartzite_prism.name=Quartzite Prisms
+tile.quartzite_tiles.name=Quartzite Tiles
 //creative tab
 itemGroup.leylines=Ley Lines
