@@ -1,0 +1,11 @@
+{
+   "parent": "block/cube",
+   "textures": {
+       "up": "tl:blocks/conduit_side",
+       "north": "tl:blocks/conduit_front",
+       "south": "tl:blocks/conduit_front",
+       "east": "tl:blocks/conduit_side",
+       "west": "tl:blocks/conduit_side",
+       "down": "tl:blocks/conduit_side"
+   }
+}

@@ -21,5 +21,7 @@ tile.quartzite_pillar.name=Quartzite Pillar
 tile.quartzite_polished.name=Polished Quartzite
 tile.quartzite_prism.name=Quartzite Prisms
 tile.quartzite_tiles.name=Quartzite Tiles
+tile.quartzite_layers.name=Layered Quartzite
+tile.conduit.name=Quartzite Conduit
 //creative tab
 itemGroup.leylines=Ley Lines
