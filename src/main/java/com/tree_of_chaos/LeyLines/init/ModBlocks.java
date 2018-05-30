@@ -2,6 +2,7 @@ package com.tree_of_chaos.LeyLines.init;
 import java.util.ArrayList;
 import java.util.List;
 import com.tree_of_chaos.LeyLines.blocks.BlockBase;
+import com.tree_of_chaos.LeyLines.blocks.Conduit;
 import com.tree_of_chaos.LeyLines.blocks.TaqaOreBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockRotatedPillar;
@@ -25,7 +26,6 @@ public class ModBlocks
 	public static final Block QUARTZITE_PRISM = new BlockBase("quartzite_prism", Material.ROCK);
 	public static final Block QUARTZITE_TILES = new BlockBase("quartzite_tiles", Material.ROCK);
 	public static final Block QUARTZITE_LAYERS = new BlockBase("quartzite_layers", Material.ROCK);
-	public static final Block QUARTZITE_STACKED = new BlockBase("quartzite_layers", Material.ROCK);
-	public static final Block CONDUIT = new BlockBase("conduit", Material.ROCK);
-	
+	public static final Block QUARTZITE_STACKED = new BlockBase("quartzite_stacked", Material.ROCK);
+	public static final Block CONDUIT = new Conduit("conduit", Material.ROCK);
 }

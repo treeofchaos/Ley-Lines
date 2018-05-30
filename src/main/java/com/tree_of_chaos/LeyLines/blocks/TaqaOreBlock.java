@@ -1,6 +1,5 @@
 package com.tree_of_chaos.LeyLines.blocks;
 import com.tree_of_chaos.LeyLines.Main;
-
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 public class TaqaOreBlock extends BlockBase
