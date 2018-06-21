@@ -1,17 +1,20 @@
 package com.tree_of_chaos.LeyLines.init;
 import java.util.ArrayList;
 import java.util.List;
+
 import com.tree_of_chaos.LeyLines.blocks.BlockBase;
+import com.tree_of_chaos.LeyLines.blocks.BlockOres;
 import com.tree_of_chaos.LeyLines.blocks.Conduit;
+import com.tree_of_chaos.LeyLines.blocks.HellRod;
 import com.tree_of_chaos.LeyLines.blocks.TaqaOreBlock;
+
 import net.minecraft.block.Block;
-import net.minecraft.block.BlockRotatedPillar;
 import net.minecraft.block.material.Material;
 public class ModBlocks 
 {
 	public static final List<Block> BLOCKS = new ArrayList<Block>();
 	//Ores
-	public static final Block TAQA_ORE_BLOCK = new TaqaOreBlock("taqa_ore_block", Material.ROCK);
+	public static final Block TAQA_ORE_BLOCK = new BlockOres("taqa_ore_block", "overworld");
 	//Ingot Blocks
 	public static final Block ALJAHIM_BLOCK = new BlockBase("aljahim_block", Material.IRON);
 	public static final Block QUA_BLOCK = new BlockBase("qua_block", Material.IRON);
@@ -28,4 +31,6 @@ public class ModBlocks
 	public static final Block QUARTZITE_LAYERS = new BlockBase("quartzite_layers", Material.ROCK);
 	public static final Block QUARTZITE_STACKED = new BlockBase("quartzite_stacked", Material.ROCK);
 	public static final Block CONDUIT = new Conduit("conduit", Material.ROCK);
+	//Misc. Blocks
+	public static final Block HELL_ROD = new HellRod("hell_rod");
 }

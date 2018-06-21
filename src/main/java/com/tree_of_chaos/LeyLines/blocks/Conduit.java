@@ -8,9 +8,10 @@ public class Conduit extends BlockBase
 	{
 		super(name, material);
 		setSoundType(SoundType.STONE);
+		setHardness(5.0f);
+		setResistance(25.0f);
 		setHarvestLevel("pickaxe", 2);
-		setLightLevel(15.0f);
+		setLightLevel(1.0f);
 		setCreativeTab(Main.creativeTab);
 	}
-
 }
