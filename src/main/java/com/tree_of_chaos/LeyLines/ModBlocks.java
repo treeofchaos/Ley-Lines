@@ -1,8 +1,11 @@
 package com.tree_of_chaos.LeyLines;
+import com.tree_of_chaos.LeyLines.blocks.AljahimBlock;
 import com.tree_of_chaos.LeyLines.blocks.Conduit;
+import com.tree_of_chaos.LeyLines.blocks.QuaBlock;
+import com.tree_of_chaos.LeyLines.blocks.RwhBlock;
+import com.tree_of_chaos.LeyLines.blocks.TaqaBlock;
 import com.tree_of_chaos.LeyLines.blocks.TaqaOreBlock;
 
-import net.minecraft.block.Block;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 public class ModBlocks 
 {
@@ -10,12 +13,20 @@ public class ModBlocks
     public static Conduit conduit;
     @GameRegistry.ObjectHolder("leylines:taqa_ore")
     public static TaqaOreBlock taqaoreblock;
+    @GameRegistry.ObjectHolder("leylines:aljahim_block")
+    public static AljahimBlock aljahimblock;
+    @GameRegistry.ObjectHolder("leylines:qua_block")
+    public static QuaBlock quablock;
+    @GameRegistry.ObjectHolder("leylines:rwh_block")
+    public static RwhBlock rwhblock;
+    @GameRegistry.ObjectHolder("leylines:taqa_block")
+    public static TaqaBlock taqablock;
     
 	/*public static final List<Block> BLOCKS = new ArrayList<Block>();
 	//Ores
-	public static final Block TAQA_ORE_BLOCK = new TaqaOreBlock();
+	--public static final Block TAQA_ORE_BLOCK = new TaqaOreBlock();
 	//Ingot Blocks
-	public static final Block ALJAHIM_BLOCK = new BlockBase("aljahim_block", Material.IRON);
+	--public static final Block ALJAHIM_BLOCK = new BlockBase("aljahim_block", Material.IRON);
 	public static final Block QUA_BLOCK = new BlockBase("qua_block", Material.IRON);
 	public static final Block RWH_BLOCK = new BlockBase("rwh_block", Material.IRON);
 	public static final Block TAQA_BLOCK = new BlockBase("taqa_block", Material.IRON);
