@@ -1,19 +1,20 @@
 package com.tree_of_chaos.LeyLines.blocks;
+import com.tree_of_chaos.LeyLines.LeyLines;
 import com.tree_of_chaos.LeyLines.Main;
+import net.minecraft.block.Block;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
-public class TaqaOreBlock extends BlockBase
+public class TaqaOreBlock extends Block
 {
-
-	public TaqaOreBlock(String name, Material material) 
+	//public static final Block TAQA_ORE_BLOCK;
+	public TaqaOreBlock() 
 	{
-		super(name, material);
+		super(Material.IRON);
 		setSoundType(SoundType.STONE);
 		setHardness(5.0f);
 		setResistance(18000000.0f);
 		setHarvestLevel("pickaxe", 2);
 		setLightLevel(8.0f);
-		setCreativeTab(Main.creativeTab);
+		setCreativeTab(LeyLines.creativeTab);
 	}
-
 }
