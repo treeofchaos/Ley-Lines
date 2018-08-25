@@ -1,9 +1,6 @@
 package com.tree_of_chaos.LeyLines;
-
 import org.apache.logging.log4j.Logger;
-
 import com.tree_of_chaos.LeyLines.proxy.CommonProxy;
-
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.fml.common.Mod;

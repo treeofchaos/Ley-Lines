@@ -1,7 +1,4 @@
 package com.tree_of_chaos.LeyLines;
-import com.tree_of_chaos.LeyLines.init.ModBlocks;
-import com.tree_of_chaos.LeyLines.init.ModItems;
-import com.tree_of_chaos.LeyLines.init.ModRecipes;
 import com.tree_of_chaos.LeyLines.proxy.CommonProxy;
 import com.tree_of_chaos.LeyLines.util.Reference;
 import net.minecraft.creativetab.CreativeTabs;
@@ -28,17 +25,17 @@ public class Main
 	@EventHandler
 	public static void init(FMLInitializationEvent event)
 	{
-		ModRecipes.init();
+		//ModRecipes.init();
 	}
 	@EventHandler
 	public static void PostInit(FMLPostInitializationEvent event)
 	{
 		
 	}
-    public static CreativeTabs creativeTab = new CreativeTabs("leylines") {
+  /*  public static CreativeTabs creativeTab = new CreativeTabs("leylines") {
         @Override
         public ItemStack getTabIconItem() {
             return new ItemStack(ModItems.TAQA_INGOT);
-        }
-    };
+       }
+    };*/
 }	

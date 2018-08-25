@@ -1,8 +1,7 @@
-package com.tree_of_chaos.LeyLines.util.handlers;
-import com.tree_of_chaos.LeyLines.init.ModBlocks;
-import com.tree_of_chaos.LeyLines.init.ModItems;
+/*package com.tree_of_chaos.LeyLines.util.handlers;
+import com.tree_of_chaos.LeyLines.ModBlocks;
+import com.tree_of_chaos.LeyLines.ModItems;
 import com.tree_of_chaos.LeyLines.util.IHasModel;
-
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 import net.minecraftforge.client.event.ModelRegistryEvent;
@@ -40,4 +39,4 @@ public class RegistryHandler
 			}
 		}
 	}
-}
+}*/

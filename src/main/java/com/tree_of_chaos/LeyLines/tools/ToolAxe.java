@@ -1,6 +1,6 @@
-package com.tree_of_chaos.LeyLines.tools;
+/*package com.tree_of_chaos.LeyLines.tools;
 import com.tree_of_chaos.LeyLines.Main;
-import com.tree_of_chaos.LeyLines.init.ModItems;
+import com.tree_of_chaos.LeyLines.ModItems;
 import com.tree_of_chaos.LeyLines.util.IHasModel;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.ItemAxe;
@@ -20,4 +20,4 @@ public class ToolAxe extends ItemAxe implements IHasModel
 	{
 		Main.proxy.registerItemRenderer(this,0,"inventory");
 	}
-}
+}*/
