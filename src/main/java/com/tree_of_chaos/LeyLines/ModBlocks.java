@@ -66,7 +66,7 @@ public class ModBlocks
     
     @GameRegistry.ObjectHolder("leylines:quartzite_stacked")
     public static QuartziteStacked quartzitestacked;
-    
+    //============================================================
     @GameRegistry.ObjectHolder("leylines:quartzite_spiral")
     public static QuartziteSpiral quartzitespiral;
     
