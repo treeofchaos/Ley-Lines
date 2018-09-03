@@ -15,6 +15,6 @@ public class QuartziteSpiral extends Block
 		setHarvestLevel("pickaxe", 2);
 		setCreativeTab(LeyLines.creativeTab);
 		setUnlocalizedName(LeyLines.MODID + ".quartzite_spiral");
-		setRegistryName("quartzitespiral");
+		setRegistryName("quartzite_spiral");
 	}
 }

@@ -15,6 +15,6 @@ public class QuartziteDark extends Block
 		setHarvestLevel("pickaxe", 2);
 		setCreativeTab(LeyLines.creativeTab);
 		setUnlocalizedName(LeyLines.MODID + ".quartzite_dark");
-		setRegistryName("quartzitedark");
+		setRegistryName("quartzite_dark");
 	}
 }

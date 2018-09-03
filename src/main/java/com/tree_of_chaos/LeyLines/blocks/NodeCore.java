@@ -16,6 +16,6 @@ public class NodeCore extends Block
 		setLightLevel(1.0f);
 		setCreativeTab(LeyLines.creativeTab);
 		setUnlocalizedName(LeyLines.MODID + ".node_core");
-		setRegistryName("nodecore");
+		setRegistryName("node_core");
 	}
 }

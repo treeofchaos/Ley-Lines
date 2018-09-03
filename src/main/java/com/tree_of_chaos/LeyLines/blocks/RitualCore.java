@@ -16,6 +16,6 @@ public class RitualCore extends Block
 		setLightLevel(1.0f);
 		setCreativeTab(LeyLines.creativeTab);
 		setUnlocalizedName(LeyLines.MODID + ".ritual_core");
-		setRegistryName("ritualcore");
+		setRegistryName("ritual_core");
 	}
 }

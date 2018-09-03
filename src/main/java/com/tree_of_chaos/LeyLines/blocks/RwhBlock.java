@@ -16,7 +16,7 @@ public class RwhBlock extends Block
 		setLightLevel(1.0f);
 		setCreativeTab(LeyLines.creativeTab);
 		setUnlocalizedName(LeyLines.MODID + ".rwh_block");
-		setRegistryName("rwhblock");
+		setRegistryName("rwh_block");
 	}
 
 }

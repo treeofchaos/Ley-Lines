@@ -18,6 +18,6 @@ public class InfusionCore extends Block
 		setLightLevel(1.0f);
 		setCreativeTab(LeyLines.creativeTab);
 		setUnlocalizedName(LeyLines.MODID + ".infusion_core");
-		setRegistryName("infusioncore");
+		setRegistryName("infusion_core");
 	}
 }

@@ -16,7 +16,7 @@ public class TaqaBlock extends Block
 		setLightLevel(1.0f);
 		setCreativeTab(LeyLines.creativeTab);
 		setUnlocalizedName(LeyLines.MODID + ".taqa_block");
-		setRegistryName("taqablock");
+		setRegistryName("taqa_block");
 	}
 
 }

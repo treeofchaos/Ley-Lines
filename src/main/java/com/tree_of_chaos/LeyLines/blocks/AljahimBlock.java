@@ -16,7 +16,7 @@ public class AljahimBlock extends Block
 			setLightLevel(1.0f);
 			setCreativeTab(LeyLines.creativeTab);
 			setUnlocalizedName(LeyLines.MODID + ".aljahim_block");
-			setRegistryName("aljahimblock");
+			setRegistryName("aljahim_block");
 	}
 
 }

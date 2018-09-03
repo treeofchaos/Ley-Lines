@@ -16,6 +16,6 @@ public class ForgeCore extends Block
 		setLightLevel(1.0f);
 		setCreativeTab(LeyLines.creativeTab);
 		setUnlocalizedName(LeyLines.MODID + ".forge_core");
-		setRegistryName("forgecore");
+		setRegistryName("forge_core");
 	}
 }

@@ -16,6 +16,6 @@ public class TaqaOreBlock extends Block
 		setLightLevel(8.0f);
 		setCreativeTab(LeyLines.creativeTab);
 		setUnlocalizedName(LeyLines.MODID + ".taqa_ore");
-		setRegistryName("taqaoreblock");
+		setRegistryName("taqa_ore_block");
 	}
 }

@@ -15,6 +15,6 @@ public class QuartziteLayers extends Block
 		setHarvestLevel("pickaxe", 2);
 		setCreativeTab(LeyLines.creativeTab);
 		setUnlocalizedName(LeyLines.MODID + ".quartzite_layers");
-		setRegistryName("quartzitelayers");
+		setRegistryName("quartzite_layers");
 	}
 }

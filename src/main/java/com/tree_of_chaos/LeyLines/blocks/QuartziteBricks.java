@@ -15,7 +15,7 @@ public class QuartziteBricks extends Block
 		setHarvestLevel("pickaxe", 2);
 		setCreativeTab(LeyLines.creativeTab);
 		setUnlocalizedName(LeyLines.MODID + ".quartzite_bricks");
-		setRegistryName("quartzitebricks");
+		setRegistryName("quartzite_bricks");
 	}
 
 }
