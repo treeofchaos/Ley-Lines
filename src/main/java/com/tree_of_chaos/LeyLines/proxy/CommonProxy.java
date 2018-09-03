@@ -19,7 +19,8 @@ import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 @Mod.EventBusSubscriber
-public class CommonProxy {
+public class CommonProxy 
+{
 	public void preInit(FMLPreInitializationEvent e) 
 	{
 		File directory = e.getModConfigurationDirectory();
@@ -54,12 +55,14 @@ public class CommonProxy {
 	}
 	public static Configuration config;
 	
-	public void registerItemRenderer(ToolBow toolBow, int i, String string) {
+	public void registerItemRenderer(ToolBow toolBow, int i, String string) 
+	{
 		// TODO Auto-generated method stub
 		
 	}
 
-	public void registerItemRenderer(ToolArrow toolArrow, int i, String string) {
+	public void registerItemRenderer(ToolArrow toolArrow, int i, String string) 
+	{
 		// TODO Auto-generated method stub
 		
 	}

@@ -1,8 +1,6 @@
 package com.tree_of_chaos.LeyLines.util;
 import org.apache.logging.log4j.Level;
-
 import com.tree_of_chaos.LeyLines.LeyLines;
-import com.tree_of_chaos.LeyLines.Main;
 import com.tree_of_chaos.LeyLines.proxy.CommonProxy;
 import net.minecraftforge.common.config.Configuration;
 

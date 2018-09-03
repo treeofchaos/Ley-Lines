@@ -9,14 +9,14 @@ import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 
-@Mod(modid = LeyLines.MODID, name = LeyLines.MODNAME, version = LeyLines.MODVERSION, dependencies = "required-after:Forge@[14.23.3.2655,)", useMetadata = true)
+@Mod(modid = LeyLines.MODID, name = LeyLines.MODNAME, version = LeyLines.MODVERSION, useMetadata = true)
 public class LeyLines {
 
     public static final String MODID = "leylines";
     public static final String MODNAME = "LeyLines";
     public static final String MODVERSION = "0.0.1";
 
-    @SidedProxy(clientSide = "tree_of_chaos.LeyLines.proxy.ClientProxy", serverSide = "tree_of_chaos.LeyLinesproxy.ServerProxy")
+    @SidedProxy(clientSide = "com.tree_of_chaos.LeyLines.proxy.ClientProxy", serverSide = "com.tree_of_chaos.LeyLinesproxy.ServerProxy")
     public static CommonProxy proxy;
 
     @Mod.Instance

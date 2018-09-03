@@ -1,7 +1,6 @@
 package com.tree_of_chaos.LeyLines.tools;
 import javax.annotation.Nullable;
-
-import com.tree_of_chaos.LeyLines.Main;
+import com.tree_of_chaos.LeyLines.LeyLines;
 import com.tree_of_chaos.LeyLines.ModItems;
 import com.tree_of_chaos.LeyLines.util.IHasModel;
 import net.minecraft.creativetab.CreativeTabs;
@@ -52,7 +51,7 @@ public class ToolBow extends ItemBow implements IHasModel
 	
 	public void registerModels() 
 	{
-		Main.proxy.registerItemRenderer(this,0,"inventory");
+		LeyLines.proxy.registerItemRenderer(this,0,"inventory");
 	}
 	
 	

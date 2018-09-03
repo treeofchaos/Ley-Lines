@@ -1,5 +1,5 @@
-/*package com.tree_of_chaos.LeyLines.blocks;
-import com.tree_of_chaos.LeyLines.Main;
+package com.tree_of_chaos.LeyLines.blocks;
+/*import com.tree_of_chaos.LeyLines.Main;
 import com.tree_of_chaos.LeyLines.init.ModBlocks;
 import com.tree_of_chaos.LeyLines.init.ModItems;
 import com.tree_of_chaos.LeyLines.util.IHasModel;
