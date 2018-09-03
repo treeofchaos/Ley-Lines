@@ -6,7 +6,7 @@ import net.minecraft.block.material.Material;
 
 public class ForgeCore extends Block
 {
-	public ForgeCore(Material materialIn) 
+	public ForgeCore() 
 	{
 		super(Material.ROCK);
 		setSoundType(SoundType.STONE);
@@ -16,6 +16,6 @@ public class ForgeCore extends Block
 		setLightLevel(1.0f);
 		setCreativeTab(LeyLines.creativeTab);
 		setUnlocalizedName(LeyLines.MODID + ".forge_core");
-		setRegistryName("Forge Core");
+		setRegistryName("forgecore");
 	}
 }

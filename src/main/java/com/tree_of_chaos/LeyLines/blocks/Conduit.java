@@ -15,6 +15,6 @@ public class Conduit extends Block
 		setLightLevel(1.0f);
 		setCreativeTab(LeyLines.creativeTab);
 		setUnlocalizedName(LeyLines.MODID + ".conduit");
-		setRegistryName("Conduit");
+		setRegistryName("conduit");
 	}
 }

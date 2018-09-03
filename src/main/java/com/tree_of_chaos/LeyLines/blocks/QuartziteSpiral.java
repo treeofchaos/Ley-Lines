@@ -6,7 +6,7 @@ import net.minecraft.block.material.Material;
 
 public class QuartziteSpiral extends Block
 {
-	public QuartziteSpiral(Material materialIn) 
+	public QuartziteSpiral() 
 	{
 		super(Material.ROCK);
 		setSoundType(SoundType.STONE);
@@ -15,6 +15,6 @@ public class QuartziteSpiral extends Block
 		setHarvestLevel("pickaxe", 2);
 		setCreativeTab(LeyLines.creativeTab);
 		setUnlocalizedName(LeyLines.MODID + ".quartzite_spiral");
-		setRegistryName("Quartzite Spiral");
+		setRegistryName("quartzitespiral");
 	}
 }

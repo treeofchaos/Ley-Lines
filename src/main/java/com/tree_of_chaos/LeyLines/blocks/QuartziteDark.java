@@ -6,7 +6,7 @@ import net.minecraft.block.material.Material;
 
 public class QuartziteDark extends Block
 {
-	public QuartziteDark(Material materialIn) 
+	public QuartziteDark() 
 	{
 		super(Material.ROCK);
 		setSoundType(SoundType.STONE);
@@ -15,6 +15,6 @@ public class QuartziteDark extends Block
 		setHarvestLevel("pickaxe", 2);
 		setCreativeTab(LeyLines.creativeTab);
 		setUnlocalizedName(LeyLines.MODID + ".quartzite_dark");
-		setRegistryName("Dark Quartzite");
+		setRegistryName("quartzitedark");
 	}
 }

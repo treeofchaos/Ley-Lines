@@ -6,7 +6,7 @@ import net.minecraft.block.material.Material;
 
 public class RitualCore extends Block
 {
-	public RitualCore(Material materialIn) 
+	public RitualCore() 
 	{
 		super(Material.ROCK);
 		setSoundType(SoundType.STONE);
@@ -16,6 +16,6 @@ public class RitualCore extends Block
 		setLightLevel(1.0f);
 		setCreativeTab(LeyLines.creativeTab);
 		setUnlocalizedName(LeyLines.MODID + ".ritual_core");
-		setRegistryName("Ritual Core");
+		setRegistryName("ritualcore");
 	}
 }

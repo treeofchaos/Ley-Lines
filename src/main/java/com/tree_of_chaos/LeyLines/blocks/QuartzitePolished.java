@@ -16,6 +16,6 @@ public class QuartzitePolished extends Block
 		setHarvestLevel("pickaxe", 2);
 		setCreativeTab(LeyLines.creativeTab);
 		setUnlocalizedName(LeyLines.MODID + ".quartzite_polished");
-		setRegistryName("Polished Quartzite");
+		setRegistryName("quartzitepolished");
 	}
 }

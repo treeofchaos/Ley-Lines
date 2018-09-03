@@ -6,7 +6,7 @@ import net.minecraft.block.material.Material;
 public class RwhBlock extends Block
 {
 
-	public RwhBlock(Material materialIn) 
+	public RwhBlock() 
 	{
 		super(Material.IRON);
 		setSoundType(SoundType.METAL);
@@ -16,7 +16,7 @@ public class RwhBlock extends Block
 		setLightLevel(1.0f);
 		setCreativeTab(LeyLines.creativeTab);
 		setUnlocalizedName(LeyLines.MODID + ".rwh_block");
-		setRegistryName("Rwh Block");
+		setRegistryName("rwhblock");
 	}
 
 }

@@ -21,7 +21,6 @@ public class LeyLines {
 
     @Mod.Instance
     public static LeyLines instance;
-
     public static Logger logger;
 
     @Mod.EventHandler
@@ -42,7 +41,7 @@ public class LeyLines {
     public static CreativeTabs creativeTab = new CreativeTabs("leylines") {
         @Override
         public ItemStack getTabIconItem() {
-            return new ItemStack(ModBlocks.taqaoreblock);
+            return new ItemStack(ModBlocks.taqablock);
        }
     };
 }

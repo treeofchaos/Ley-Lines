@@ -6,7 +6,7 @@ import net.minecraft.block.material.Material;
 public class TaqaBlock extends Block
 {
 
-	public TaqaBlock(Material materialIn) 
+	public TaqaBlock() 
 	{
 		super(Material.IRON);
 		setSoundType(SoundType.METAL);
@@ -16,7 +16,7 @@ public class TaqaBlock extends Block
 		setLightLevel(1.0f);
 		setCreativeTab(LeyLines.creativeTab);
 		setUnlocalizedName(LeyLines.MODID + ".taqa_block");
-		setRegistryName("Taqa Block");
+		setRegistryName("taqablock");
 	}
 
 }

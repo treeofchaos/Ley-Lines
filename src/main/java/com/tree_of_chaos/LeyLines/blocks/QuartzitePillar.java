@@ -15,6 +15,6 @@ public class QuartzitePillar extends Block
 		setHarvestLevel("pickaxe", 2);
 		setCreativeTab(LeyLines.creativeTab);
 		setUnlocalizedName(LeyLines.MODID + ".quartzite_pillar");
-		setRegistryName("Quartzite Pillar");
+		setRegistryName("qurtzitepillar");
 	}
 }

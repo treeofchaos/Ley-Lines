@@ -8,7 +8,7 @@ import net.minecraft.block.material.Material;
 public class QuaBlock extends Block
 {
 
-	public QuaBlock(Material materialIn) 
+	public QuaBlock() 
 	{
 		super(Material.IRON);
 		setSoundType(SoundType.METAL);
@@ -18,7 +18,7 @@ public class QuaBlock extends Block
 		setLightLevel(1.0f);
 		setCreativeTab(LeyLines.creativeTab);
 		setUnlocalizedName(LeyLines.MODID + ".qua_block");
-		setRegistryName("Qua Block");
+		setRegistryName("quablock");
 	}
 
 }

@@ -24,6 +24,5 @@ tile.quartzite_tiles.name=Quartzite Tiles
 tile.quartzite_layers.name=Layered Quartzite
 tile.conduit.name=Quartzite Conduit
 tile.quartzite_stacked.name=Stacked Quartzite
-tile.hell_rod.name=Hellish Rod
 //creative tab
 itemGroup.leylines=Ley Lines

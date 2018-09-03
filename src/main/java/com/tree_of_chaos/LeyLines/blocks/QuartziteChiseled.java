@@ -15,6 +15,6 @@ public class QuartziteChiseled extends Block
 		setHarvestLevel("pickaxe", 2);
 		setCreativeTab(LeyLines.creativeTab);
 		setUnlocalizedName(LeyLines.MODID + ".quartzite_chiseled");
-		setRegistryName("Chiseled Quartzite");
+		setRegistryName("quartzitechiseled");
 	}
 }

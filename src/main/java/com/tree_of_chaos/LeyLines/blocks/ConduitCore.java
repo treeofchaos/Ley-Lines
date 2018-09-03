@@ -6,7 +6,7 @@ import net.minecraft.block.material.Material;
 
 public class ConduitCore extends Block
 {
-	public ConduitCore(Material materialIn) 
+	public ConduitCore() 
 	{
 		super(Material.ROCK);
 		setSoundType(SoundType.STONE);
@@ -16,6 +16,6 @@ public class ConduitCore extends Block
 		setLightLevel(1.0f);
 		setCreativeTab(LeyLines.creativeTab);
 		setUnlocalizedName(LeyLines.MODID + ".conduit_core");
-		setRegistryName("Conduit Core");
+		setRegistryName("conduitcore");
 	}
 }

@@ -21,8 +21,9 @@ import com.tree_of_chaos.LeyLines.blocks.RitualCore;
 import com.tree_of_chaos.LeyLines.blocks.RwhBlock;
 import com.tree_of_chaos.LeyLines.blocks.TaqaBlock;
 import com.tree_of_chaos.LeyLines.blocks.TaqaOreBlock;
-
 import net.minecraftforge.fml.common.registry.GameRegistry;
+import net.minecraftforge.fml.relauncher.Side;
+import net.minecraftforge.fml.relauncher.SideOnly;
 public class ModBlocks 
 {
     @GameRegistry.ObjectHolder("leylines:conduit")
@@ -87,6 +88,9 @@ public class ModBlocks
     
     @GameRegistry.ObjectHolder("leylines:conduit_core")
     public static ConduitCore conduitcore;
+    
+    @GameRegistry.ObjectHolder("leylines:taqa_block")
+    public static ConduitCore taqablock;
 
 /*	Taqa Sand
 	Taqa Glass

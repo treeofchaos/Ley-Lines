@@ -6,7 +6,7 @@ import net.minecraft.block.material.Material;
 
 public class NodeCore extends Block
 {
-	public NodeCore(Material materialIn) 
+	public NodeCore() 
 	{
 		super(Material.ROCK);
 		setSoundType(SoundType.STONE);
@@ -15,7 +15,7 @@ public class NodeCore extends Block
 		setHarvestLevel("pickaxe", 2);
 		setLightLevel(1.0f);
 		setCreativeTab(LeyLines.creativeTab);
-		setUnlocalizedName(LeyLines.MODID + ".quartzite_block");
-		setRegistryName("Quartzite");
+		setUnlocalizedName(LeyLines.MODID + ".node_core");
+		setRegistryName("nodecore");
 	}
 }

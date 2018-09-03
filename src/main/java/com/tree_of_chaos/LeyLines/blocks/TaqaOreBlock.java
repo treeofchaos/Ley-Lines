@@ -15,5 +15,7 @@ public class TaqaOreBlock extends Block
 		setHarvestLevel("pickaxe", 2);
 		setLightLevel(8.0f);
 		setCreativeTab(LeyLines.creativeTab);
+		setUnlocalizedName(LeyLines.MODID + ".taqa_ore");
+		setRegistryName("taqaoreblock");
 	}
 }
