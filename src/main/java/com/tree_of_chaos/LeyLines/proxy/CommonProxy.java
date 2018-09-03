@@ -92,7 +92,28 @@ public class CommonProxy
 	@SubscribeEvent
 	public static void registerItems(RegistryEvent.Register<Item> event) 
 	{
+		event.getRegistry().register(new ItemBlock(ModBlocks.aljahimblock).setRegistryName(ModBlocks.aljahimblock.getRegistryName()));
 		event.getRegistry().register(new ItemBlock(ModBlocks.conduit).setRegistryName(ModBlocks.conduit.getRegistryName()));
+		event.getRegistry().register(new ItemBlock(ModBlocks.conduitcore).setRegistryName(ModBlocks.conduitcore.getRegistryName()));
+		event.getRegistry().register(new ItemBlock(ModBlocks.forgecore).setRegistryName(ModBlocks.forgecore.getRegistryName()));
+		event.getRegistry().register(new ItemBlock(ModBlocks.infusioncore).setRegistryName(ModBlocks.infusioncore.getRegistryName()));
+		event.getRegistry().register(new ItemBlock(ModBlocks.nodecore).setRegistryName(ModBlocks.nodecore.getRegistryName()));
+		event.getRegistry().register(new ItemBlock(ModBlocks.quablock).setRegistryName(ModBlocks.quablock.getRegistryName()));
+		event.getRegistry().register(new ItemBlock(ModBlocks.quartziteblock).setRegistryName(ModBlocks.quartziteblock.getRegistryName()));
+		event.getRegistry().register(new ItemBlock(ModBlocks.quartzitebricks).setRegistryName(ModBlocks.quartzitebricks.getRegistryName()));
+		event.getRegistry().register(new ItemBlock(ModBlocks.quartzitechiseled).setRegistryName(ModBlocks.quartzitechiseled.getRegistryName()));
+		event.getRegistry().register(new ItemBlock(ModBlocks.quartzitedark).setRegistryName(ModBlocks.quartzitedark.getRegistryName()));
+		event.getRegistry().register(new ItemBlock(ModBlocks.quartzitelayers).setRegistryName(ModBlocks.quartzitelayers.getRegistryName()));
+		event.getRegistry().register(new ItemBlock(ModBlocks.quartzitepillar).setRegistryName(ModBlocks.quartzitepillar.getRegistryName()));
+		event.getRegistry().register(new ItemBlock(ModBlocks.quartzitepolished).setRegistryName(ModBlocks.quartzitepolished.getRegistryName()));
+		event.getRegistry().register(new ItemBlock(ModBlocks.quartziteprism).setRegistryName(ModBlocks.quartziteprism.getRegistryName()));
+		event.getRegistry().register(new ItemBlock(ModBlocks.quartzitespiral).setRegistryName(ModBlocks.quartzitespiral.getRegistryName()));
+		event.getRegistry().register(new ItemBlock(ModBlocks.quartzitestacked).setRegistryName(ModBlocks.quartzitestacked.getRegistryName()));
+		event.getRegistry().register(new ItemBlock(ModBlocks.quartzitetiles).setRegistryName(ModBlocks.quartzitetiles.getRegistryName()));
+		event.getRegistry().register(new ItemBlock(ModBlocks.ritualcore).setRegistryName(ModBlocks.ritualcore.getRegistryName()));
+		event.getRegistry().register(new ItemBlock(ModBlocks.rwhblock).setRegistryName(ModBlocks.rwhblock.getRegistryName()));
+		event.getRegistry().register(new ItemBlock(ModBlocks.taqablock).setRegistryName(ModBlocks.taqablock.getRegistryName()));
+		event.getRegistry().register(new ItemBlock(ModBlocks.taqaoreblock).setRegistryName(ModBlocks.taqaoreblock.getRegistryName()));
 	}
 	public static Configuration config;
 	
