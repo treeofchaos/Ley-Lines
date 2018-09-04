@@ -1,0 +1,6 @@
+{
+   "parent": "leylines:item/aljahim_bow",
+   "textures": {
+       "layer0": "leylines:items/aljahim_bow_charging3"
+   }
+}

@@ -1,0 +1,6 @@
+{
+   "parent": "block/cube_all",
+   "textures": {
+       "all": "leylines:blocks/taqa_ore_block"
+   }
+}
