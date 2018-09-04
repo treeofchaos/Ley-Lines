@@ -12,6 +12,6 @@ public class LeyLinesTab extends CreativeTabs
 		super("leylines");
 	}
 	public ItemStack getTabIconItem() {
-		return new ItemStack(ModBlocks.taqaoreblock);
+		return new ItemStack(ModBlocks.taqa_block);
 	}
 }

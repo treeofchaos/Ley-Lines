@@ -1,5 +1,10 @@
 {
-    "variants": {
-        "normal": { "model": "tl:forge_core" }
-    }
+  "forge_marker": 1,
+  "defaults": {
+    "model": "tl:forge_core"
+  },
+  "variants": {
+    "normal": [{}],
+    "inventory": [{}]
+  }
 }

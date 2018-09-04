@@ -8,25 +8,23 @@ import net.minecraft.item.Item;
 import net.minecraftforge.client.model.ModelLoader;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
-
-public class NodeCore extends Block
+public class Quartzite extends Block
 {
-	public NodeCore() 
+	public Quartzite() 
 	{
 		super(Material.ROCK);
 		setSoundType(SoundType.STONE);
 		setHardness(5.0f);
-		setResistance(16000.0f);
+		setResistance(25.0f);
 		setHarvestLevel("pickaxe", 2);
-		setLightLevel(1.0f);
 		setCreativeTab(LeyLines.creativeTab);
-		setUnlocalizedName(LeyLines.MODID + ".node_core");
-		setRegistryName("node_core");
-	}   
+		setUnlocalizedName(LeyLines.MODID + ".quartzite");
+		setRegistryName("quartzite");
+	}
 	
-	@SideOnly(Side.CLIENT)
+    @SideOnly(Side.CLIENT)
     public void initModel() 
-	{
+    {
         ModelLoader.setCustomModelResourceLocation(Item.getItemFromBlock(this), 0, new ModelResourceLocation(getRegistryName(), "inventory"));
     }
 }

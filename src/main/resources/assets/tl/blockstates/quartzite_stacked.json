@@ -1,5 +1,10 @@
 {
-    "variants": {
-        "normal": { "model": "tl:quartzite_stacked" }
-    }
+  "forge_marker": 1,
+  "defaults": {
+    "model": "tl:quartzite_stacked"
+  },
+  "variants": {
+    "normal": [{}],
+    "inventory": [{}]
+  }
 }

@@ -12,8 +12,8 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 @Mod(modid = LeyLines.MODID, name = LeyLines.MODNAME, version = LeyLines.MODVERSION, useMetadata = true)
 public class LeyLines {
 
-    public static final String MODID = "leylines";
-    public static final String MODNAME = "LeyLines";
+    public static final String MODID = "tl";
+    public static final String MODNAME = "Ley Lines";
     public static final String MODVERSION = "0.0.1";
 
     @SidedProxy(clientSide = "com.tree_of_chaos.LeyLines.proxy.ClientProxy", serverSide = "com.tree_of_chaos.LeyLinesproxy.ServerProxy")
@@ -41,7 +41,7 @@ public class LeyLines {
     public static CreativeTabs creativeTab = new CreativeTabs("leylines") {
         @Override
         public ItemStack getTabIconItem() {
-            return new ItemStack(ModBlocks.taqablock);
+            return new ItemStack(ModBlocks.taqa_block);
        }
     };
 }

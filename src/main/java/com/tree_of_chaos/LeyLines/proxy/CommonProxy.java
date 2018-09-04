@@ -9,7 +9,7 @@ import com.tree_of_chaos.LeyLines.blocks.ForgeCore;
 import com.tree_of_chaos.LeyLines.blocks.InfusionCore;
 import com.tree_of_chaos.LeyLines.blocks.NodeCore;
 import com.tree_of_chaos.LeyLines.blocks.QuaBlock;
-import com.tree_of_chaos.LeyLines.blocks.QuartziteBlock;
+import com.tree_of_chaos.LeyLines.blocks.Quartzite;
 import com.tree_of_chaos.LeyLines.blocks.QuartziteBricks;
 import com.tree_of_chaos.LeyLines.blocks.QuartziteChiseled;
 import com.tree_of_chaos.LeyLines.blocks.QuartziteDark;
@@ -24,7 +24,6 @@ import com.tree_of_chaos.LeyLines.blocks.RitualCore;
 import com.tree_of_chaos.LeyLines.blocks.RwhBlock;
 import com.tree_of_chaos.LeyLines.blocks.TaqaBlock;
 import com.tree_of_chaos.LeyLines.blocks.TaqaOreBlock;
-//import com.tree_of_chaos.LeyLines.items.ItemBase;
 import com.tree_of_chaos.LeyLines.tools.ToolArrow;
 import com.tree_of_chaos.LeyLines.tools.ToolBow;
 import com.tree_of_chaos.LeyLines.util.Config;
@@ -73,7 +72,7 @@ public class CommonProxy
 		event.getRegistry().register(new InfusionCore());
 		event.getRegistry().register(new NodeCore());
 		event.getRegistry().register(new QuaBlock());
-		event.getRegistry().register(new QuartziteBlock());
+		event.getRegistry().register(new Quartzite());
 		event.getRegistry().register(new QuartziteBricks());
 		event.getRegistry().register(new QuartziteChiseled());
 		event.getRegistry().register(new QuartziteDark());
@@ -92,29 +91,30 @@ public class CommonProxy
 	@SubscribeEvent
 	public static void registerItems(RegistryEvent.Register<Item> event) 
 	{
-		event.getRegistry().register(new ItemBlock(ModBlocks.aljahimblock).setRegistryName(ModBlocks.aljahimblock.getRegistryName()));
+		event.getRegistry().register(new ItemBlock(ModBlocks.aljahim_block).setRegistryName(ModBlocks.aljahim_block.getRegistryName()));
 		event.getRegistry().register(new ItemBlock(ModBlocks.conduit).setRegistryName(ModBlocks.conduit.getRegistryName()));
-		event.getRegistry().register(new ItemBlock(ModBlocks.conduitcore).setRegistryName(ModBlocks.conduitcore.getRegistryName()));
-		event.getRegistry().register(new ItemBlock(ModBlocks.forgecore).setRegistryName(ModBlocks.forgecore.getRegistryName()));
-		event.getRegistry().register(new ItemBlock(ModBlocks.infusioncore).setRegistryName(ModBlocks.infusioncore.getRegistryName()));
-		event.getRegistry().register(new ItemBlock(ModBlocks.nodecore).setRegistryName(ModBlocks.nodecore.getRegistryName()));
-		event.getRegistry().register(new ItemBlock(ModBlocks.quablock).setRegistryName(ModBlocks.quablock.getRegistryName()));
-		event.getRegistry().register(new ItemBlock(ModBlocks.quartziteblock).setRegistryName(ModBlocks.quartziteblock.getRegistryName()));
-		event.getRegistry().register(new ItemBlock(ModBlocks.quartzitebricks).setRegistryName(ModBlocks.quartzitebricks.getRegistryName()));
-		event.getRegistry().register(new ItemBlock(ModBlocks.quartzitechiseled).setRegistryName(ModBlocks.quartzitechiseled.getRegistryName()));
-		event.getRegistry().register(new ItemBlock(ModBlocks.quartzitedark).setRegistryName(ModBlocks.quartzitedark.getRegistryName()));
-		event.getRegistry().register(new ItemBlock(ModBlocks.quartzitelayers).setRegistryName(ModBlocks.quartzitelayers.getRegistryName()));
-		event.getRegistry().register(new ItemBlock(ModBlocks.quartzitepillar).setRegistryName(ModBlocks.quartzitepillar.getRegistryName()));
-		event.getRegistry().register(new ItemBlock(ModBlocks.quartzitepolished).setRegistryName(ModBlocks.quartzitepolished.getRegistryName()));
-		event.getRegistry().register(new ItemBlock(ModBlocks.quartziteprism).setRegistryName(ModBlocks.quartziteprism.getRegistryName()));
-		event.getRegistry().register(new ItemBlock(ModBlocks.quartzitespiral).setRegistryName(ModBlocks.quartzitespiral.getRegistryName()));
-		event.getRegistry().register(new ItemBlock(ModBlocks.quartzitestacked).setRegistryName(ModBlocks.quartzitestacked.getRegistryName()));
-		event.getRegistry().register(new ItemBlock(ModBlocks.quartzitetiles).setRegistryName(ModBlocks.quartzitetiles.getRegistryName()));
-		event.getRegistry().register(new ItemBlock(ModBlocks.ritualcore).setRegistryName(ModBlocks.ritualcore.getRegistryName()));
-		event.getRegistry().register(new ItemBlock(ModBlocks.rwhblock).setRegistryName(ModBlocks.rwhblock.getRegistryName()));
-		event.getRegistry().register(new ItemBlock(ModBlocks.taqablock).setRegistryName(ModBlocks.taqablock.getRegistryName()));
-		event.getRegistry().register(new ItemBlock(ModBlocks.taqaoreblock).setRegistryName(ModBlocks.taqaoreblock.getRegistryName()));
+		event.getRegistry().register(new ItemBlock(ModBlocks.conduit_core).setRegistryName(ModBlocks.conduit_core.getRegistryName()));
+		event.getRegistry().register(new ItemBlock(ModBlocks.forge_core).setRegistryName(ModBlocks.forge_core.getRegistryName()));
+		event.getRegistry().register(new ItemBlock(ModBlocks.infusion_core).setRegistryName(ModBlocks.infusion_core.getRegistryName()));
+		event.getRegistry().register(new ItemBlock(ModBlocks.node_core).setRegistryName(ModBlocks.node_core.getRegistryName()));
+		event.getRegistry().register(new ItemBlock(ModBlocks.qua_block).setRegistryName(ModBlocks.qua_block.getRegistryName()));
+		event.getRegistry().register(new ItemBlock(ModBlocks.quartzite).setRegistryName(ModBlocks.quartzite.getRegistryName()));
+		event.getRegistry().register(new ItemBlock(ModBlocks.quartzite_bricks).setRegistryName(ModBlocks.quartzite_bricks.getRegistryName()));
+		event.getRegistry().register(new ItemBlock(ModBlocks.quartzite_chiseled).setRegistryName(ModBlocks.quartzite_chiseled.getRegistryName()));
+		event.getRegistry().register(new ItemBlock(ModBlocks.quartzite_dark).setRegistryName(ModBlocks.quartzite_dark.getRegistryName()));
+		event.getRegistry().register(new ItemBlock(ModBlocks.quartzite_layers).setRegistryName(ModBlocks.quartzite_layers.getRegistryName()));
+		event.getRegistry().register(new ItemBlock(ModBlocks.quartzite_pillar).setRegistryName(ModBlocks.quartzite_pillar.getRegistryName()));
+		event.getRegistry().register(new ItemBlock(ModBlocks.quartzite_polished).setRegistryName(ModBlocks.quartzite_polished.getRegistryName()));
+		event.getRegistry().register(new ItemBlock(ModBlocks.quartzite_prism).setRegistryName(ModBlocks.quartzite_prism.getRegistryName()));
+		event.getRegistry().register(new ItemBlock(ModBlocks.quartzite_spiral).setRegistryName(ModBlocks.quartzite_spiral.getRegistryName()));
+		event.getRegistry().register(new ItemBlock(ModBlocks.quartzite_stacked).setRegistryName(ModBlocks.quartzite_stacked.getRegistryName()));
+		event.getRegistry().register(new ItemBlock(ModBlocks.quartzite_tiles).setRegistryName(ModBlocks.quartzite_tiles.getRegistryName()));
+		event.getRegistry().register(new ItemBlock(ModBlocks.ritual_core).setRegistryName(ModBlocks.ritual_core.getRegistryName()));
+		event.getRegistry().register(new ItemBlock(ModBlocks.rwh_block).setRegistryName(ModBlocks.rwh_block.getRegistryName()));
+		event.getRegistry().register(new ItemBlock(ModBlocks.taqa_block).setRegistryName(ModBlocks.taqa_block.getRegistryName()));
+		event.getRegistry().register(new ItemBlock(ModBlocks.taqa_ore_block).setRegistryName(ModBlocks.taqa_ore_block.getRegistryName()));
 	}
+	
 	public static Configuration config;
 	
 	public void registerItemRenderer(ToolBow toolBow, int i, String string) 

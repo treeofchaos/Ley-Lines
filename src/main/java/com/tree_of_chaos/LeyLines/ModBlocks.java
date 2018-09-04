@@ -6,7 +6,7 @@ import com.tree_of_chaos.LeyLines.blocks.ForgeCore;
 import com.tree_of_chaos.LeyLines.blocks.InfusionCore;
 import com.tree_of_chaos.LeyLines.blocks.NodeCore;
 import com.tree_of_chaos.LeyLines.blocks.QuaBlock;
-import com.tree_of_chaos.LeyLines.blocks.QuartziteBlock;
+import com.tree_of_chaos.LeyLines.blocks.Quartzite;
 import com.tree_of_chaos.LeyLines.blocks.QuartziteBricks;
 import com.tree_of_chaos.LeyLines.blocks.QuartziteChiseled;
 import com.tree_of_chaos.LeyLines.blocks.QuartziteDark;
@@ -29,68 +29,68 @@ public class ModBlocks
     @GameRegistry.ObjectHolder("leylines:conduit")
     public static Conduit conduit;
     
-    @GameRegistry.ObjectHolder("leylines:taqa_ore")
-    public static TaqaOreBlock taqaoreblock;
+    @GameRegistry.ObjectHolder("leylines:taqa_ore_block")
+    public static TaqaOreBlock taqa_ore_block;
     
     @GameRegistry.ObjectHolder("leylines:aljahim_block")
-    public static AljahimBlock aljahimblock;
+    public static AljahimBlock aljahim_block;
     
     @GameRegistry.ObjectHolder("leylines:qua_block")
-    public static QuaBlock quablock;
+    public static QuaBlock qua_block;
     
     @GameRegistry.ObjectHolder("leylines:rwh_block")
-    public static RwhBlock rwhblock;
+    public static RwhBlock rwh_block;
     
     @GameRegistry.ObjectHolder("leylines:quartzite")
-    public static QuartziteBlock quartziteblock;
+    public static Quartzite quartzite;
     
     @GameRegistry.ObjectHolder("leylines:quartzite_bricks")
-    public static QuartziteBricks quartzitebricks;
+    public static QuartziteBricks quartzite_bricks;
     
     @GameRegistry.ObjectHolder("leylines:quartzite_chiseled")
-    public static QuartziteChiseled quartzitechiseled;
+    public static QuartziteChiseled quartzite_chiseled;
     
     @GameRegistry.ObjectHolder("leylines:quartzite_pillar")
-    public static QuartzitePillar quartzitepillar;
+    public static QuartzitePillar quartzite_pillar;
     
     @GameRegistry.ObjectHolder("leylines:quartzite_polished")
-    public static QuartzitePolished quartzitepolished;
+    public static QuartzitePolished quartzite_polished;
     
     @GameRegistry.ObjectHolder("leylines:quartzite_prism")
-    public static QuartzitePrism quartziteprism;
+    public static QuartzitePrism quartzite_prism;
     
     @GameRegistry.ObjectHolder("leylines:quartzite_tiles")
-    public static QuartziteTiles quartzitetiles;
+    public static QuartziteTiles quartzite_tiles;
     
     @GameRegistry.ObjectHolder("leylines:quartzite_layers")
-    public static QuartziteLayers quartzitelayers;
+    public static QuartziteLayers quartzite_layers;
     
     @GameRegistry.ObjectHolder("leylines:quartzite_stacked")
-    public static QuartziteStacked quartzitestacked;
-    //============================================================
+    public static QuartziteStacked quartzite_stacked;
+    
     @GameRegistry.ObjectHolder("leylines:quartzite_spiral")
-    public static QuartziteSpiral quartzitespiral;
+    public static QuartziteSpiral quartzite_spiral;
     
     @GameRegistry.ObjectHolder("leylines:quartzite_dark")
-    public static QuartziteDark quartzitedark;
+    public static QuartziteDark quartzite_dark;
     
     @GameRegistry.ObjectHolder("leylines:ritual_core")
-    public static RitualCore ritualcore;
+    public static RitualCore ritual_core;
     
     @GameRegistry.ObjectHolder("leylines:infusion_core")
-    public static InfusionCore infusioncore;
+    public static InfusionCore infusion_core;
     
     @GameRegistry.ObjectHolder("leylines:forge_core")
-    public static ForgeCore forgecore;
+    public static ForgeCore forge_core;
     
     @GameRegistry.ObjectHolder("leylines:node_core")
-    public static NodeCore nodecore;
+    public static NodeCore node_core;
     
     @GameRegistry.ObjectHolder("leylines:conduit_core")
-    public static ConduitCore conduitcore;
+    public static ConduitCore conduit_core;
     
     @GameRegistry.ObjectHolder("leylines:taqa_block")
-    public static ConduitCore taqablock;
+    public static TaqaBlock taqa_block;
 
 /*	Taqa Sand
 	Taqa Glass

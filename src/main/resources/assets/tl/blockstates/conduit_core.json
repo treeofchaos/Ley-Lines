@@ -1,5 +1,10 @@
 {
-    "variants": {
-        "normal": { "model": "tl:conduit_core" }
-    }
+  "forge_marker": 1,
+  "defaults": {
+    "model": "tl:conduit_core"
+  },
+  "variants": {
+    "normal": [{}],
+    "inventory": [{}]
+  }
 }

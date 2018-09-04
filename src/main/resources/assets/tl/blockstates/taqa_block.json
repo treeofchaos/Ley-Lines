@@ -1,5 +1,10 @@
 {
-    "variants": {
-        "normal": { "model": "tl:taqa_block" }
-    }
+  "forge_marker": 1,
+  "defaults": {
+    "model": "tl:taqa_block"
+  },
+  "variants": {
+    "normal": [{}],
+    "inventory": [{}]
+  }
 }
