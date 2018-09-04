@@ -96,4 +96,30 @@ public class ModBlocks
 	Taqa Glass
 	//Misc. Blocks
 	public static final Block HELL_ROD = new HellRod("hell_rod");*/
+    @SideOnly(Side.CLIENT)
+    public static void initModels() 
+    {
+        aljahim_block.initModel();
+        conduit.initModel();
+        conduit_core.initModel();
+        forge_core.initModel();
+        infusion_core.initModel();
+        node_core.initModel();
+        qua_block.initModel();
+        quartzite.initModel();
+        quartzite_bricks.initModel();
+        quartzite_chiseled.initModel();
+        quartzite_dark.initModel();
+        quartzite_layers.initModel();
+        quartzite_pillar.initModel();
+        quartzite_polished.initModel();
+        quartzite_prism.initModel();
+        quartzite_spiral.initModel();
+        quartzite_stacked.initModel();
+        quartzite_tiles.initModel();
+        ritual_core.initModel();
+        rwh_block.initModel();
+        taqa_block.initModel();
+        taqa_ore_block.initModel();
+    }
 }

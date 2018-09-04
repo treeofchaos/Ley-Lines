@@ -1,11 +1,11 @@
 {
    "parent": "block/cube",
    "textures": {
-       "up": "leylines:blocks/conduit_side",
+       "up": "leylines:blocks/conduit_top",
        "north": "leylines:blocks/conduit_front",
        "south": "leylines:blocks/conduit_front",
        "east": "leylines:blocks/conduit_side",
        "west": "leylines:blocks/conduit_side",
-       "down": "leylines:blocks/conduit_side"
+       "down": "leylines:blocks/conduit_top"
    }
 }
