@@ -1,4 +1,4 @@
-package tree_of_chaos.leylines.util;
+package tree_of_chaos.leylines.config;
 import org.apache.logging.log4j.Level;
 
 import net.minecraftforge.common.config.Configuration;

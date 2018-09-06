@@ -24,6 +24,7 @@ import tree_of_chaos.leylines.blocks.RitualCore;
 import tree_of_chaos.leylines.blocks.RwhBlock;
 import tree_of_chaos.leylines.blocks.TaqaBlock;
 import tree_of_chaos.leylines.blocks.TaqaOreBlock;
+import tree_of_chaos.leylines.blocks.TaqaSand;
 public class ModBlocks 
 {
     @GameRegistry.ObjectHolder("leylines:conduit")
@@ -91,6 +92,9 @@ public class ModBlocks
     
     @GameRegistry.ObjectHolder("leylines:taqa_block")
     public static TaqaBlock taqa_block;
+    
+    @GameRegistry.ObjectHolder("leylines:taqa_sand")
+    public static TaqaSand taqa_sand;
 
 /*	Taqa Sand
 	Taqa Glass
@@ -121,5 +125,6 @@ public class ModBlocks
         rwh_block.initModel();
         taqa_block.initModel();
         taqa_ore_block.initModel();
+        taqa_sand.initModel();
     }
 }

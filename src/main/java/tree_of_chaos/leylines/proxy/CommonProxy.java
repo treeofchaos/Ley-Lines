@@ -34,17 +34,21 @@ import tree_of_chaos.leylines.blocks.RitualCore;
 import tree_of_chaos.leylines.blocks.RwhBlock;
 import tree_of_chaos.leylines.blocks.TaqaBlock;
 import tree_of_chaos.leylines.blocks.TaqaOreBlock;
+import tree_of_chaos.leylines.blocks.TaqaSand;
+import tree_of_chaos.leylines.config.Config;
 import tree_of_chaos.leylines.tools.ToolArrow;
 import tree_of_chaos.leylines.tools.ToolBow;
-import tree_of_chaos.leylines.util.Config;
+import tree_of_chaos.leylines.world.LeyLinesWorldGen;
 @Mod.EventBusSubscriber
 public class CommonProxy 
 {
+	
 	public void preInit(FMLPreInitializationEvent e) 
 	{
 		File directory = e.getModConfigurationDirectory();
 		config = new Configuration(new File(directory.getPath(), "leylines.cfg"));
 		Config.readConfig();
+		LeyLinesWorldGen.init();
 	}
 
 	public void init(FMLInitializationEvent e) 
@@ -85,6 +89,7 @@ public class CommonProxy
 		event.getRegistry().register(new RitualCore());
 		event.getRegistry().register(new RwhBlock());
 		event.getRegistry().register(new TaqaBlock());
+		event.getRegistry().register(new TaqaSand());
 	}
 
 	@SubscribeEvent
@@ -112,6 +117,7 @@ public class CommonProxy
 		event.getRegistry().register(new ItemBlock(ModBlocks.rwh_block).setRegistryName(ModBlocks.rwh_block.getRegistryName()));
 		event.getRegistry().register(new ItemBlock(ModBlocks.taqa_block).setRegistryName(ModBlocks.taqa_block.getRegistryName()));
 		event.getRegistry().register(new ItemBlock(ModBlocks.taqa_ore_block).setRegistryName(ModBlocks.taqa_ore_block.getRegistryName()));
+		event.getRegistry().register(new ItemBlock(ModBlocks.taqa_sand).setRegistryName(ModBlocks.taqa_sand.getRegistryName()));
 	}
 	
 	public static Configuration config;
@@ -119,12 +125,10 @@ public class CommonProxy
 	public void registerItemRenderer(ToolBow toolBow, int i, String string) 
 	{
 		// TODO Auto-generated method stub
-		
 	}
 
 	public void registerItemRenderer(ToolArrow toolArrow, int i, String string) 
 	{
 		// TODO Auto-generated method stub
-		
 	}
 }
