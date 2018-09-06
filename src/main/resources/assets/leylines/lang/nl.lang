@@ -1,0 +1,17 @@
+itemGroup.leylines=Ley Lines
+
+tile.leylines.taqa_ore_block.name=Taqa Erts
+tile.leylines.quartzite.name=Quartzite
+tile.leylines.aljahim_block.name=Aljahim Blok
+tile.leylines.qua_block.name=Qua Blok
+tile.leylines.rwh_block.name=Rwh Blok
+tile.leylines.taqa_block.name=Taqa Blok
+tile.leylines.quartzite_bricks.name=Quartzite Blokken
+tile.leylines.quartzite_chiseled.name=Gebeiteld Quartzite
+tile.leylines.quartzite_pillar.name=Quartzite Pillaar
+tile.leylines.quartzite_polished.name=Gepolijst Quartzite
+tile.leylines.quartzite_prism.name=Quartzite Prisma's
+tile.leylines.quartzite_tiles.name=Quartzite Tegels
+tile.leylines.quartzite_layers.name=Gelaagd Quartzite
+tile.leylines.conduit.name=Leiding
+tile.leylines.quartzite_stacked.name=Gestapeld Quartzite
