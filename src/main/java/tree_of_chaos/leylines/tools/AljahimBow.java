@@ -1,4 +1,5 @@
 package tree_of_chaos.leylines.tools;
+import init.ModItems;
 //import tree_of_chaos.leylines.items.ItemBase;
 //import tree_of_chaos.leylines.util.handlers.RegistryHandler;
 import net.minecraft.creativetab.CreativeTabs;
@@ -24,7 +25,6 @@ import net.minecraftforge.event.ForgeEventFactory;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
-import tree_of_chaos.leylines.ModItems;
 public class AljahimBow extends ItemBow
 {
 	public static final String NAME = "AljahimBow";

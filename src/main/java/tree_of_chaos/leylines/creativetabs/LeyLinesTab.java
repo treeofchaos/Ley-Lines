@@ -1,9 +1,9 @@
 package tree_of_chaos.leylines.creativetabs;
+import init.BlockInit;
+import init.ModItems;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
-import tree_of_chaos.leylines.ModBlocks;
-import tree_of_chaos.leylines.ModItems;
 public class LeyLinesTab extends CreativeTabs
 {
 	public LeyLinesTab(String label) 
@@ -11,6 +11,6 @@ public class LeyLinesTab extends CreativeTabs
 		super("leylines");
 	}
 	public ItemStack getTabIconItem() {
-		return new ItemStack(ModBlocks.taqa_block);
+		return new ItemStack(BlockInit.taqa_block);
 	}
 }

@@ -1,6 +1,7 @@
 package tree_of_chaos.leylines.tools;
 import javax.annotation.Nullable;
 
+import init.ModItems;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
@@ -18,7 +19,6 @@ import net.minecraft.world.World;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 import tree_of_chaos.leylines.LeyLines;
-import tree_of_chaos.leylines.ModItems;
 import tree_of_chaos.leylines.util.IHasModel;
 public class ToolBow extends ItemBow implements IHasModel 
 {

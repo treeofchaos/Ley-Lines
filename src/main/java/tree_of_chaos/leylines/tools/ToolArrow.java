@@ -1,9 +1,9 @@
 package tree_of_chaos.leylines.tools;
+import init.ModItems;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.ItemArrow;
 import net.minecraft.item.Item.ToolMaterial;
 import tree_of_chaos.leylines.LeyLines;
-import tree_of_chaos.leylines.ModItems;
 import tree_of_chaos.leylines.util.IHasModel;
 public class ToolArrow extends ItemArrow implements IHasModel
 {
