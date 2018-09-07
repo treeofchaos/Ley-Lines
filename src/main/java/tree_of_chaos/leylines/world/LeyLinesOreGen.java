@@ -1,5 +1,7 @@
 package tree_of_chaos.leylines.world;
 import java.util.Random;
+
+import init.BlockInit;
 import net.minecraft.block.Block;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
@@ -7,7 +9,6 @@ import net.minecraft.world.chunk.IChunkProvider;
 import net.minecraft.world.gen.IChunkGenerator;
 import net.minecraft.world.gen.feature.WorldGenMinable;
 import net.minecraftforge.fml.common.IWorldGenerator;
-import tree_of_chaos.leylines.ModBlocks;
 
 public class LeyLinesOreGen implements IWorldGenerator 
 {
@@ -26,7 +27,7 @@ public class LeyLinesOreGen implements IWorldGenerator
 		}
 		if (world.provider.getDimension() == 0) 
 		{
-			addOreSpawn(ModBlocks.quartzite, (byte) 0, ModBlocks.quartzite, world, random, chunkX * 16, chunkZ * 16, 10, 64, 10, 0, 70);
+			addOreSpawn(BlockInit.QUARTZITE, (byte) 0, BlockInit.QUARTZITE, world, random, chunkX * 16, chunkZ * 16, 10, 64, 10, 0, 70);
 		}
 	}
 	public void addOreSpawn(Block block, byte blockMeta, Block targetBlock, World world, Random random, int blockXPos, int blockZPos, int minVeinSize, int maxVeinSize, int chancesToSpawn, int minY, int maxY) 

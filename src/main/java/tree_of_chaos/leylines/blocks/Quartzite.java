@@ -1,4 +1,5 @@
 package tree_of_chaos.leylines.blocks;
+
 import net.minecraft.block.Block;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
@@ -8,6 +9,7 @@ import net.minecraftforge.client.model.ModelLoader;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 import tree_of_chaos.leylines.LeyLines;
+
 public class Quartzite extends Block
 {
 	public Quartzite() 
@@ -17,8 +19,7 @@ public class Quartzite extends Block
 		setHardness(5.0f);
 		setResistance(25.0f);
 		setHarvestLevel("pickaxe", 2);
-		setCreativeTab(LeyLines.creativeTab);
-		setUnlocalizedName(LeyLines.MODID + ".quartzite");
+		setCreativeTab(LeyLines.leylinestab);
 		setRegistryName("quartzite");
 	}
 	
