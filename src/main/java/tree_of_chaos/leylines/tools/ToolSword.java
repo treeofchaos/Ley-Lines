@@ -12,7 +12,7 @@ public class ToolSword extends ItemSword implements IHasModel
 		super(material);
 		setUnlocalizedName(name);
 		setRegistryName(name);
-		setCreativeTab(CreativeTabs.MATERIALS);
+		setCreativeTab(LeyLines.leylinestab);
 		ModItems.ITEMS.add(this);
 	}
 	public void registerModels() 

@@ -1,5 +1,6 @@
 package tree_of_chaos.leylines.tools;
-import init.ModItems;
+import tree_of_chaos.leylines.init.BlockInit;
+import tree_of_chaos.leylines.init.ItemInit;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.ItemArrow;
 import net.minecraft.item.Item.ToolMaterial;
@@ -11,8 +12,8 @@ public class ToolArrow extends ItemArrow implements IHasModel
 	{
 		setUnlocalizedName(name);
 		setRegistryName(name);
-		setCreativeTab(CreativeTabs.MATERIALS);
-		ModItems.ITEMS.add(this);
+		setCreativeTab(LeyLines.leylinestab);
+		ItemInit.ITEMS.add(this);
 		
 	}
 	public void registerModels() 

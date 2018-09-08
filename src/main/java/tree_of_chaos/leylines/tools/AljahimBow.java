@@ -1,8 +1,8 @@
 package tree_of_chaos.leylines.tools;
-import init.ModItems;
+import tree_of_chaos.leylines.LeyLines;
+import tree_of_chaos.leylines.init.ItemInit;
 //import tree_of_chaos.leylines.items.ItemBase;
 //import tree_of_chaos.leylines.util.handlers.RegistryHandler;
-import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.enchantment.EnchantmentHelper;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
@@ -20,7 +20,6 @@ import net.minecraft.util.SoundCategory;
 import net.minecraft.world.World;
 import net.minecraftforge.client.event.FOVUpdateEvent;
 import net.minecraftforge.common.MinecraftForge;
-import net.minecraftforge.common.config.Config;
 import net.minecraftforge.event.ForgeEventFactory;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.relauncher.Side;
@@ -37,7 +36,7 @@ public class AljahimBow extends ItemBow
 	{
 		setUnlocalizedName(NAME);
 		setRegistryName(NAME);
-		setCreativeTab(CreativeTabs.COMBAT);
+		setCreativeTab(LeyLines.leylinestab);
 		setMaxDamage(800);
 		setHasSubtypes(false);
 	}
@@ -50,7 +49,7 @@ public class AljahimBow extends ItemBow
 	}
 
 	protected void init() {
-		ModItems.ITEMS.add(this);    
+		ItemInit.ITEMS.add(this);    
 	}
 
 	public void onPlayerStoppedUsing(ItemStack stack, World worldIn, EntityLivingBase entityLiving, int timeLeft) {

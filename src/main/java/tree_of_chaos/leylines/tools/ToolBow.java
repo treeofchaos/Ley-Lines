@@ -1,18 +1,14 @@
 package tree_of_chaos.leylines.tools;
 import javax.annotation.Nullable;
 
-import init.ModItems;
+import tree_of_chaos.leylines.init.ItemInit;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.item.ItemArrow;
 import net.minecraft.item.ItemBow;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.EnumAction;
 import net.minecraft.item.IItemPropertyGetter;
-import net.minecraft.item.Item.ToolMaterial;
-import net.minecraft.util.ActionResult;
-import net.minecraft.util.EnumActionResult;
 import net.minecraft.util.EnumHand;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.world.World;
@@ -26,8 +22,8 @@ public class ToolBow extends ItemBow implements IHasModel
 	{
 		setUnlocalizedName(name);
 		setRegistryName(name);
-		setCreativeTab(CreativeTabs.COMBAT);
-		ModItems.ITEMS.add(this);
+		setCreativeTab(LeyLines.leylinestab);
+		ItemInit.ITEMS.add(this);
 
 		this.addPropertyOverride(new ResourceLocation("pull"), new IItemPropertyGetter()
 		{

@@ -1,4 +1,5 @@
 package tree_of_chaos.leylines.blocks;
+
 import net.minecraft.block.Block;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
@@ -16,20 +17,24 @@ import net.minecraftforge.client.model.ModelLoader;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 import tree_of_chaos.leylines.LeyLines;
-public class Conduit extends Block
-{
+
+public class Conduit extends Block {
 	public static final PropertyDirection FACING = PropertyDirection.create("facing");
-	public Conduit() 
-	{
+	
+	String name;
+	
+	public Conduit( String name) {
+		
 		super(Material.ROCK);
+		this.name= name;
+		setUnlocalizedName(name);
+		setRegistryName(name);
 		setSoundType(SoundType.STONE);
-		setHardness(5.0f);
+		setHardness(5F);
 		setResistance(25.0f);
 		setHarvestLevel("pickaxe", 2);
 		setLightLevel(1.0f);
-		setCreativeTab(LeyLines.creativeTab);
-		setUnlocalizedName(LeyLines.MODID + ".conduit");
-		setRegistryName("conduit");
+		setCreativeTab(LeyLines.leylinestab);
 		setDefaultState(blockState.getBaseState().withProperty(FACING, EnumFacing.NORTH));
 	}
 	
@@ -64,4 +69,9 @@ public class Conduit extends Block
 	protected BlockStateContainer createBlockState() {
 		return new BlockStateContainer(this, FACING);
 	}
+	
+    public void registerItemModel(Item item) {
+    	LeyLines.proxy.registerItemRenderer(item, 0, name);
+    }
+	
 }

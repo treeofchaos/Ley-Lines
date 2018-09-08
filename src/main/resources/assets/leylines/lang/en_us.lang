@@ -1,17 +1,29 @@
-itemGroup.leylines=Ley Lines
+itemGroup.leylinestab=Ley Lines
 
-tile.leylines.taqa_ore_block.name=Taqa Ore
-tile.leylines.quartzite.name=Quartzite
-tile.leylines.aljahim_block.name=Aljahim Block
-tile.leylines.qua_block.name=Qua Block
-tile.leylines.rwh_block.name=Rwh Block
-tile.leylines.taqa_block.name=Taqa Block
-tile.leylines.quartzite_bricks.name=Quartzite Bricks
-tile.leylines.quartzite_chiseled.name=Chiseled Quartzite
-tile.leylines.quartzite_pillar.name=Quartzite Pillar
-tile.leylines.quartzite_polished.name=Polished Quartzite
-tile.leylines.quartzite_prism.name=Quartzite Prisms
-tile.leylines.quartzite_tiles.name=Quartzite Tiles
-tile.leylines.quartzite_layers.name=Layered Quartzite
-tile.leylines.conduit.name=Conduit
-tile.leylines.quartzite_stacked.name=Stacked Quartzite
+tile.taqa_ore_block.name=Taqa Ore
+
+tile.aljahim_block.name=Aljahim Block
+tile.qua_block.name=Qua Block
+tile.rwh_block.name=Rwh Block
+tile.taqa_block.name=Taqa Block
+
+tile.taqa_sand.name=Taqa Sand
+
+tile.quartzite.name=Quartzite
+tile.quartzite_bricks.name=Quartzite Bricks
+tile.quartzite_chiseled.name=Chiseled Quartzite
+tile.quartzite_pillar.name=Quartzite Pillar
+tile.quartzite_polished.name=Polished Quartzite
+tile.quartzite_prism.name=Quartzite Prisms
+tile.quartzite_tiles.name=Quartzite Tiles
+tile.quartzite_dark.name=Dark Quartzite
+tile.quartzite_layers.name=Layered Quartzite
+tile.quartzite_spiral.name=Quartzite Spiral
+tile.quartzite_stacked.name=Stacked Quartzite
+
+tile.conduit.name=Conduit
+tile.conduit_core.name=Conduit Core
+tile.node_core.name=Node Core
+tile.forge_core.name=Forge Core
+tile.infusion_core.name=Infusion Core
+tile.ritual_core.name=Ritual Core

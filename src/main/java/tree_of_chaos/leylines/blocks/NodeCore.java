@@ -11,22 +11,29 @@ import tree_of_chaos.leylines.LeyLines;
 
 public class NodeCore extends Block
 {
-	public NodeCore() 
+	String name;
+	
+	public NodeCore(String name) 
 	{
 		super(Material.ROCK);
+        this.name = name;
+        setUnlocalizedName(name);
+        setRegistryName(name);
 		setSoundType(SoundType.STONE);
 		setHardness(5.0f);
 		setResistance(16000.0f);
 		setHarvestLevel("pickaxe", 2);
 		setLightLevel(1.0f);
-		setCreativeTab(LeyLines.creativeTab);
-		setUnlocalizedName(LeyLines.MODID + ".node_core");
-		setRegistryName("node_core");
+		setCreativeTab(LeyLines.leylinestab);
 	}   
 	
 	@SideOnly(Side.CLIENT)
     public void initModel() 
 	{
         ModelLoader.setCustomModelResourceLocation(Item.getItemFromBlock(this), 0, new ModelResourceLocation(getRegistryName(), "inventory"));
+    }
+	
+    public void registerItemModel(Item item) {
+    	LeyLines.proxy.registerItemRenderer(item, 0, name);
     }
 }

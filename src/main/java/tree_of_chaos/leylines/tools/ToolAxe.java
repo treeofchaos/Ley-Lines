@@ -5,6 +5,7 @@ import tree_of_chaos.leylines.ModItems;
 import tree_of_chaos.leylines.util.IHasModel;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.ItemAxe;
+import tree_of_chaos.leylines.LeyLines;
 import net.minecraft.item.Item.ToolMaterial;
 public class ToolAxe extends ItemAxe implements IHasModel
 {
@@ -13,7 +14,7 @@ public class ToolAxe extends ItemAxe implements IHasModel
 		super(material, 8.0f, -3.0f);
 		setUnlocalizedName(name);
 		setRegistryName(name);
-		setCreativeTab(CreativeTabs.MATERIALS);
+		setCreativeTab(LeyLines.leylinestab);
 		ModItems.ITEMS.add(this);
 		
 	}
@@ -22,3 +23,4 @@ public class ToolAxe extends ItemAxe implements IHasModel
 		Main.proxy.registerItemRenderer(this,0,"inventory");
 	}
 }*/
+

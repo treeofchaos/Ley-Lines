@@ -9,24 +9,30 @@ import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 import tree_of_chaos.leylines.LeyLines;
 
-public class ForgeCore extends Block
-{
-	public ForgeCore() 
-	{
+public class ForgeCore extends Block {
+	
+	String name;
+	
+	public ForgeCore(String name) {
 		super(Material.ROCK);
+		this.name = name;
+	    setUnlocalizedName(name);
+	    setRegistryName(name);
 		setSoundType(SoundType.STONE);
 		setHardness(5.0f);
 		setResistance(16000.0f);
 		setHarvestLevel("pickaxe", 2);
 		setLightLevel(1.0f);
-		setCreativeTab(LeyLines.creativeTab);
-		setUnlocalizedName(LeyLines.MODID + ".forge_core");
-		setRegistryName("forge_core");
+		setCreativeTab(LeyLines.leylinestab);
 	}
 	
     @SideOnly(Side.CLIENT)
     public void initModel() 
     {
         ModelLoader.setCustomModelResourceLocation(Item.getItemFromBlock(this), 0, new ModelResourceLocation(getRegistryName(), "inventory"));
+    }
+
+    public void registerItemModel(Item item) {
+    	LeyLines.proxy.registerItemRenderer(item, 0, name);
     }
 }

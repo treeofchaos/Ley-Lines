@@ -1,4 +1,5 @@
 package tree_of_chaos.leylines.blocks;
+
 import net.minecraft.block.Block;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
@@ -9,19 +10,21 @@ import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 import tree_of_chaos.leylines.LeyLines;
 
-public class ConduitCore extends Block
-{
-	public ConduitCore() 
-	{
+public class ConduitCore extends Block {
+	
+	String name;
+	
+	public ConduitCore(String name) {
 		super(Material.ROCK);
+		this.name = name;
+		setUnlocalizedName(name);
+	    setRegistryName(name);
 		setSoundType(SoundType.STONE);
 		setHardness(5.0f);
 		setResistance(16000.0f);
 		setHarvestLevel("pickaxe", 2);
 		setLightLevel(1.0f);
-		setCreativeTab(LeyLines.creativeTab);
-		setUnlocalizedName(LeyLines.MODID + ".conduit_core");
-		setRegistryName("conduit_core");
+		setCreativeTab(LeyLines.leylinestab);
 	}
 	
     @SideOnly(Side.CLIENT)
@@ -29,4 +32,9 @@ public class ConduitCore extends Block
     {
         ModelLoader.setCustomModelResourceLocation(Item.getItemFromBlock(this), 0, new ModelResourceLocation(getRegistryName(), "inventory"));
     }
+    
+    public void registerItemModel(Item item) {
+    	LeyLines.proxy.registerItemRenderer(item, 0, name);
+    }
+    
 }
