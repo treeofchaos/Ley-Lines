@@ -1,5 +1,4 @@
 package tree_of_chaos.leylines.world;
-
 import java.util.Random;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.util.math.BlockPos;
@@ -27,7 +26,7 @@ public class LeyLinesOreGen implements IWorldGenerator
 	{
 		generateOre(BlockInit.QUARTZITE.getDefaultState(), world, random, chunkX * 16, chunkZ * 16, 0, 255, 4 + random.nextInt(60), 20);
 		generateOre(BlockInit.TAQA_ORE_BLOCK.getDefaultState(), world, random, chunkX * 16, chunkZ * 16, 0, 128, 4 + random.nextInt(8), 15);
-		generateOre(BlockInit.QUARTZITE.getDefaultState(), world, random, chunkX * 16, chunkZ * 16, 0, 20, 4 + random.nextInt(8), 5);
+		generateOre(BlockInit.QUA_ORE_BLOCK.getDefaultState(), world, random, chunkX * 16, chunkZ * 16, 0, 20, 4 + random.nextInt(8), 5);
 	}
 
 	private void generateOre(IBlockState ore, World world, Random random, int x, int z, int minY, int maxY, int size, int chances) 

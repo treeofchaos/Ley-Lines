@@ -17,12 +17,12 @@ public class TaqaOreBlock extends Block {
 
     public TaqaOreBlock( String name) {
 
-    	super(Material.IRON);
+    	super(Material.ROCK);
         this.name = name;
         setUnlocalizedName(name);
         setRegistryName(name);
         setCreativeTab(LeyLines.leylinestab);
-		setSoundType(SoundType.METAL);
+		setSoundType(SoundType.STONE);
 		setHardness(5.0f);
 		setResistance(25.0f);
 		setHarvestLevel("pickaxe", 4);

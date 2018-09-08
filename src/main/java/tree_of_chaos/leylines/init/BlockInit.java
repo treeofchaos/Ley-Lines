@@ -11,10 +11,11 @@ import tree_of_chaos.leylines.blocks.ConduitCore;
 import tree_of_chaos.leylines.blocks.ForgeCore;
 import tree_of_chaos.leylines.blocks.InfusionCore;
 import tree_of_chaos.leylines.blocks.NodeCore;
+import tree_of_chaos.leylines.blocks.QuaOreBlock;
+import tree_of_chaos.leylines.blocks.QuartzitePillar;
 import tree_of_chaos.leylines.blocks.RitualCore;
 import tree_of_chaos.leylines.blocks.TaqaBlock;
 import tree_of_chaos.leylines.blocks.TaqaOreBlock;
-import tree_of_chaos.leylines.blocks.TaqaSand;
 
 public class BlockInit {
 	
@@ -23,7 +24,6 @@ public class BlockInit {
 	public static BlockBaseStone QUARTZITE_BRICKS = new BlockBaseStone("quartzite_bricks");
 	public static BlockBaseStone QUARTZITE_DARK = new BlockBaseStone("quartzite_dark");
 	public static BlockBaseStone QUARTZITE_LAYERS = new BlockBaseStone("quartzite_layers");
-	public static BlockBaseStone QUARTZITE_PILLAR = new BlockBaseStone("quartzite_pillar");
 	public static BlockBaseStone QUARTZITE_POLISHED = new BlockBaseStone("quartzite_polished");
 	public static BlockBaseStone QUARTZITE_PRISM = new BlockBaseStone("quartzite_prism");
 	public static BlockBaseStone QUARTZITE_SPIRAL = new BlockBaseStone("quartzite_spiral");
@@ -32,6 +32,10 @@ public class BlockInit {
 	public static BlockBaseStone RWH_BLOCK = new BlockBaseStone("rwh_block");
 	public static BlockBaseStone ALJAHIM_BLOCK = new BlockBaseStone("aljahim_block");
 	public static BlockBaseStone QUA_BLOCK = new BlockBaseStone("qua_block");
+	public static BlockBaseStone TAQA_SAND = new BlockBaseStone("taqa_sand");
+	public static BlockBaseStone TAQA_SANDSTONE_CARVED = new BlockBaseStone("taqa_sandstone_carved");
+	public static BlockBaseStone TAQA_SANDSTONE_SMOOTH = new BlockBaseStone("taqa_sandstone_smooth");
+	public static BlockBaseStone TAQA_SANDSTONE = new BlockBaseStone("taqa_sandstone");
 	
 	/*Blocks making use of their own Block Class */
 	public static Conduit CONDUIT = new Conduit("conduit");
@@ -42,14 +46,15 @@ public class BlockInit {
 	public static RitualCore RITUAL_CORE = new RitualCore("ritual_core");
 	public static TaqaBlock TAQA_BLOCK = new TaqaBlock("taqa_block");
 	public static TaqaOreBlock TAQA_ORE_BLOCK = new TaqaOreBlock("taqa_ore_block");
-	public static TaqaSand TAQA_SAND = new TaqaSand("taqa_sand");
-	
+	public static QuartzitePillar QUARTZITE_PILLAR = new QuartzitePillar("quartzite_pillar");
+	public static QuaOreBlock QUA_ORE_BLOCK = new QuaOreBlock("qua_ore_block");
 	
 	public static void register(IForgeRegistry<Block> registry) {
 		
 		registry.registerAll(QUARTZITE, QUARTZITE_BRICKS, QUARTZITE_DARK, QUARTZITE_LAYERS, QUARTZITE_PILLAR, QUARTZITE_POLISHED,
 				QUARTZITE_PRISM, QUARTZITE_SPIRAL, QUARTZITE_STACKED, QUARTZITE_TILES, RWH_BLOCK, ALJAHIM_BLOCK, QUA_BLOCK, CONDUIT,
-				CONDUIT_CORE, FORGE_CORE, INFUSION_CORE, NODE_CORE, RITUAL_CORE, TAQA_BLOCK, TAQA_ORE_BLOCK, TAQA_SAND);
+				CONDUIT_CORE, FORGE_CORE, INFUSION_CORE, NODE_CORE, RITUAL_CORE, TAQA_BLOCK, TAQA_ORE_BLOCK, TAQA_SAND, TAQA_SANDSTONE_CARVED,
+				TAQA_SANDSTONE_SMOOTH, TAQA_SANDSTONE, QUA_ORE_BLOCK);
 	}
 	
 	public static void registerModels() {
@@ -67,7 +72,9 @@ public class BlockInit {
 		
 		RWH_BLOCK.registerItemModel(Item.getItemFromBlock(RWH_BLOCK));
 		ALJAHIM_BLOCK.registerItemModel(Item.getItemFromBlock(ALJAHIM_BLOCK));
+		
 		QUA_BLOCK.registerItemModel(Item.getItemFromBlock(QUA_BLOCK));
+		QUA_ORE_BLOCK.registerItemModel(Item.getItemFromBlock(QUA_ORE_BLOCK));
 		
 		CONDUIT.registerItemModel(Item.getItemFromBlock(CONDUIT));
 		CONDUIT_CORE.registerItemModel(Item.getItemFromBlock(CONDUIT_CORE));
@@ -79,6 +86,9 @@ public class BlockInit {
 		TAQA_BLOCK.registerItemModel(Item.getItemFromBlock(TAQA_BLOCK));
 		TAQA_ORE_BLOCK.registerItemModel(Item.getItemFromBlock(TAQA_ORE_BLOCK));
 		TAQA_SAND.registerItemModel(Item.getItemFromBlock(TAQA_SAND));
+		TAQA_SANDSTONE_CARVED.registerItemModel(Item.getItemFromBlock(TAQA_SANDSTONE_CARVED));
+		TAQA_SANDSTONE_SMOOTH.registerItemModel(Item.getItemFromBlock(TAQA_SANDSTONE_SMOOTH));
+		TAQA_SANDSTONE.registerItemModel(Item.getItemFromBlock(TAQA_SANDSTONE));
 	}
 	
 	public static void registerItemBlocks(IForgeRegistry<Item> registry) {
@@ -96,7 +106,9 @@ public class BlockInit {
 		
 		registry.register(new ItemBlock(RWH_BLOCK).setRegistryName(RWH_BLOCK.getRegistryName()));
 		registry.register(new ItemBlock(ALJAHIM_BLOCK).setRegistryName(ALJAHIM_BLOCK.getRegistryName()));
+		
 		registry.register(new ItemBlock(QUA_BLOCK).setRegistryName(QUA_BLOCK.getRegistryName()));
+		registry.register(new ItemBlock(QUA_ORE_BLOCK).setRegistryName(QUA_ORE_BLOCK.getRegistryName()));
 		
 		registry.register(new ItemBlock(CONDUIT).setRegistryName(CONDUIT.getRegistryName()));
 		registry.register(new ItemBlock(CONDUIT_CORE).setRegistryName(CONDUIT_CORE.getRegistryName()));
@@ -108,6 +120,11 @@ public class BlockInit {
 		registry.register(new ItemBlock(TAQA_BLOCK).setRegistryName(TAQA_BLOCK.getRegistryName()));
 		registry.register(new ItemBlock(TAQA_ORE_BLOCK).setRegistryName(TAQA_ORE_BLOCK.getRegistryName()));
 		registry.register(new ItemBlock(TAQA_SAND).setRegistryName(TAQA_SAND.getRegistryName()));
+		registry.register(new ItemBlock(TAQA_SANDSTONE_CARVED).setRegistryName(TAQA_SANDSTONE_CARVED.getRegistryName()));
+		registry.register(new ItemBlock(TAQA_SANDSTONE_SMOOTH).setRegistryName(TAQA_SANDSTONE_SMOOTH.getRegistryName()));
+		registry.register(new ItemBlock(TAQA_SANDSTONE).setRegistryName(TAQA_SANDSTONE.getRegistryName()));
+		registry.register(new ItemBlock(QUA_BLOCK).setRegistryName(QUA_BLOCK.getRegistryName()));
+		
 	}
 	
 }

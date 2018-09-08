@@ -1,5 +1,4 @@
 package tree_of_chaos.leylines.blocks;
-
 import net.minecraft.block.Block;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
@@ -17,20 +16,19 @@ import net.minecraftforge.client.model.ModelLoader;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 import tree_of_chaos.leylines.LeyLines;
-
-public class Conduit extends Block {
+public class Conduit extends Block
+{
 	public static final PropertyDirection FACING = PropertyDirection.create("facing");
-	
 	String name;
 	
-	public Conduit( String name) {
-		
+	public Conduit(String name) 
+	{
 		super(Material.ROCK);
-		this.name= name;
+		this.name = name;
 		setUnlocalizedName(name);
 		setRegistryName(name);
 		setSoundType(SoundType.STONE);
-		setHardness(5F);
+		setHardness(5.0f);
 		setResistance(25.0f);
 		setHarvestLevel("pickaxe", 2);
 		setLightLevel(1.0f);
@@ -44,11 +42,13 @@ public class Conduit extends Block {
 	}
 
 	@Override
-	public void onBlockPlacedBy(World world, BlockPos pos, IBlockState state, EntityLivingBase placer, ItemStack stack) {
+	public void onBlockPlacedBy(World world, BlockPos pos, IBlockState state, EntityLivingBase placer, ItemStack stack) 
+	{
 		world.setBlockState(pos, state.withProperty(FACING, getFacingFromEntity(pos, placer)), 2);
 	}
 
-	public static EnumFacing getFacingFromEntity(BlockPos clickedBlock, EntityLivingBase entity) {
+	public static EnumFacing getFacingFromEntity(BlockPos clickedBlock, EntityLivingBase entity) 
+	{
 		return EnumFacing.getFacingFromVector(
 				(float) (entity.posX - clickedBlock.getX()),
 				(float) (entity.posY - clickedBlock.getY()),
@@ -56,22 +56,24 @@ public class Conduit extends Block {
 	}
 
 	@Override
-	public IBlockState getStateFromMeta(int meta) {
+	public IBlockState getStateFromMeta(int meta) 
+	{
 		return getDefaultState().withProperty(FACING, EnumFacing.getFront(meta & 7));
 	}
 
 	@Override
-	public int getMetaFromState(IBlockState state) {
+	public int getMetaFromState(IBlockState state) 
+	{
 		return state.getValue(FACING).getIndex();
 	}
 
 	@Override
-	protected BlockStateContainer createBlockState() {
+	protected BlockStateContainer createBlockState() 
+	{
 		return new BlockStateContainer(this, FACING);
 	}
 	
     public void registerItemModel(Item item) {
     	LeyLines.proxy.registerItemRenderer(item, 0, name);
     }
-	
 }

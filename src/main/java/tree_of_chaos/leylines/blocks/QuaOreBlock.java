@@ -11,18 +11,18 @@ import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 import tree_of_chaos.leylines.LeyLines;
 
-public class TaqaSand extends Block {
+public class QuaOreBlock extends Block{
 	
 	String name;
 
-    public TaqaSand( String name) {
+    public QuaOreBlock( String name) {
 
-    	super(Material.IRON);
+    	super(Material.ROCK);
         this.name = name;
         setUnlocalizedName(name);
         setRegistryName(name);
         setCreativeTab(LeyLines.leylinestab);
-		setSoundType(SoundType.METAL);
+		setSoundType(SoundType.STONE);
 		setHardness(5.0f);
 		setResistance(25.0f);
 		setHarvestLevel("pickaxe", 4);
