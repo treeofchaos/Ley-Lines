@@ -1,7 +1,5 @@
 package tree_of_chaos.leylines;
 
-import org.apache.logging.log4j.Logger;
-
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
@@ -19,6 +17,7 @@ import tree_of_chaos.leylines.util.handlers.RegistryHandler;
 public class LeyLines {
 
 	public static final CreativeTabs leylinestab = new LeyLinesTab("leylinestab");
+
 
 	@Instance
 	public static LeyLines instance;
