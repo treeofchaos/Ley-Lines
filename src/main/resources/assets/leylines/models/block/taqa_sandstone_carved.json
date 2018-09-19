@@ -1,0 +1,11 @@
+{
+   "parent": "block/cube",
+   "textures": {
+       "up": "leylines:blocks/taqa_sandstone_top",
+       "north": "leylines:blocks/taqa_sandstone_carved",
+       "south": "leylines:blocks/taqa_sandstone_carved",
+       "east": "leylines:blocks/taqa_sandstone_carved",
+       "west": "leylines:blocks/taqa_sandstone_carved",
+       "down": "leylines:blocks/taqa_sandstone_bottom"
+   }
+}

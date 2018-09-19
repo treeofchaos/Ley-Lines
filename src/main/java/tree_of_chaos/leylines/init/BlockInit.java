@@ -4,22 +4,21 @@ import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemBlock;
 import net.minecraftforge.registries.IForgeRegistry;
-
 import tree_of_chaos.leylines.blocks.BlockBaseStone;
 import tree_of_chaos.leylines.blocks.Conduit;
 import tree_of_chaos.leylines.blocks.ConduitCore;
 import tree_of_chaos.leylines.blocks.ForgeCore;
 import tree_of_chaos.leylines.blocks.InfusionCore;
+import tree_of_chaos.leylines.blocks.MetalBlockBase;
 import tree_of_chaos.leylines.blocks.NodeCore;
 import tree_of_chaos.leylines.blocks.QuaOreBlock;
 import tree_of_chaos.leylines.blocks.QuartzitePillar;
 import tree_of_chaos.leylines.blocks.RitualCore;
-import tree_of_chaos.leylines.blocks.TaqaBlock;
 import tree_of_chaos.leylines.blocks.TaqaOreBlock;
 import tree_of_chaos.leylines.blocks.TaqaSand;
 
 public class BlockInit 
-{	
+{
 	/*Blocks making use of BlockBaseStone*/
 	public static BlockBaseStone QUARTZITE = new BlockBaseStone("quartzite");
 	public static BlockBaseStone QUARTZITE_BRICKS = new BlockBaseStone("quartzite_bricks");
@@ -30,12 +29,15 @@ public class BlockInit
 	public static BlockBaseStone QUARTZITE_SPIRAL = new BlockBaseStone("quartzite_spiral");
 	public static BlockBaseStone QUARTZITE_STACKED = new BlockBaseStone("quartzite_stacked");
 	public static BlockBaseStone QUARTZITE_TILES = new BlockBaseStone("quartzite_tiles");
-	public static BlockBaseStone RWH_BLOCK = new BlockBaseStone("rwh_block");
-	public static BlockBaseStone ALJAHIM_BLOCK = new BlockBaseStone("aljahim_block");
-	public static BlockBaseStone QUA_BLOCK = new BlockBaseStone("qua_block");
 	public static BlockBaseStone TAQA_SANDSTONE_CARVED = new BlockBaseStone("taqa_sandstone_carved");
 	public static BlockBaseStone TAQA_SANDSTONE_SMOOTH = new BlockBaseStone("taqa_sandstone_smooth");
 	public static BlockBaseStone TAQA_SANDSTONE = new BlockBaseStone("taqa_sandstone");
+	
+	//Blocks using MetalBlockBase
+	public static MetalBlockBase RWH_BLOCK = new MetalBlockBase("rwh_block");
+	public static MetalBlockBase ALJAHIM_BLOCK = new MetalBlockBase("aljahim_block");
+	public static MetalBlockBase QUA_BLOCK = new MetalBlockBase("qua_block");
+	public static MetalBlockBase TAQA_BLOCK = new MetalBlockBase("taqa_block");
 	
 	/*Blocks making use of their own Block Class */
 	public static Conduit CONDUIT = new Conduit("conduit");
@@ -44,13 +46,13 @@ public class BlockInit
 	public static InfusionCore INFUSION_CORE = new InfusionCore("infusion_core");
 	public static NodeCore NODE_CORE = new NodeCore("node_core");
 	public static RitualCore RITUAL_CORE = new RitualCore("ritual_core");
-	public static TaqaBlock TAQA_BLOCK = new TaqaBlock("taqa_block");
 	public static TaqaOreBlock TAQA_ORE_BLOCK = new TaqaOreBlock("taqa_ore_block");
 	public static QuartzitePillar QUARTZITE_PILLAR = new QuartzitePillar("quartzite_pillar");
 	public static QuaOreBlock QUA_ORE_BLOCK = new QuaOreBlock("qua_ore_block");
 	public static TaqaSand TAQA_SAND = new TaqaSand("taqa_sand");
 	
-	public static void register(IForgeRegistry<Block> registry) {
+	public static void register(IForgeRegistry<Block> registry) 
+	{
 		
 		registry.registerAll(QUARTZITE, QUARTZITE_BRICKS, QUARTZITE_DARK, QUARTZITE_LAYERS, QUARTZITE_PILLAR, QUARTZITE_POLISHED,
 				QUARTZITE_PRISM, QUARTZITE_SPIRAL, QUARTZITE_STACKED, QUARTZITE_TILES, RWH_BLOCK, ALJAHIM_BLOCK, QUA_BLOCK, CONDUIT,
@@ -58,8 +60,8 @@ public class BlockInit
 				TAQA_SANDSTONE_SMOOTH, TAQA_SANDSTONE, QUA_ORE_BLOCK);
 	}
 	
-	public static void registerModels() {
-		
+	public static void registerModels() 
+	{
 		QUARTZITE.registerItemModel(Item.getItemFromBlock(QUARTZITE));
 		QUARTZITE_BRICKS.registerItemModel(Item.getItemFromBlock(QUARTZITE_BRICKS));
 		QUARTZITE_DARK.registerItemModel(Item.getItemFromBlock(QUARTZITE_DARK));
@@ -92,8 +94,8 @@ public class BlockInit
 		TAQA_SANDSTONE.registerItemModel(Item.getItemFromBlock(TAQA_SANDSTONE));
 	}
 	
-	public static void registerItemBlocks(IForgeRegistry<Item> registry) {
-		
+	public static void registerItemBlocks(IForgeRegistry<Item> registry) 
+	{	
 		registry.register(new ItemBlock(QUARTZITE).setRegistryName(QUARTZITE.getRegistryName()));
 		registry.register(new ItemBlock(QUARTZITE_BRICKS).setRegistryName(QUARTZITE_BRICKS.getRegistryName()));
 		registry.register(new ItemBlock(QUARTZITE_DARK).setRegistryName(QUARTZITE_DARK.getRegistryName()));

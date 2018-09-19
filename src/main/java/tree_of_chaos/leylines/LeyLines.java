@@ -14,24 +14,34 @@ import tree_of_chaos.leylines.util.Reference;
 import tree_of_chaos.leylines.util.handlers.RegistryHandler;
 
 @Mod(modid = Reference.MOD_ID, name = Reference.NAME, version = Reference.VERSION)
-public class LeyLines {
+public class LeyLines 
+{
 
 	public static final CreativeTabs leylinestab = new LeyLinesTab("leylinestab");
 
 
 	@Instance
 	public static LeyLines instance;
-	
+
 	@SidedProxy(clientSide = Reference.CLIENT_PROXY_CLASS, serverSide = Reference.COMMON_PROXY_CLASS)
 	public static CommonProxy proxy;
-	
+
 	@EventHandler
-	public static void preInit(FMLPreInitializationEvent event) {RegistryHandler.preInitRegistries();}
-	
+	public static void preInit(FMLPreInitializationEvent event) 
+	{
+		RegistryHandler.preInitRegistries();
+	}
+
 	@EventHandler
-	public static void init(FMLInitializationEvent event) {RegistryHandler.initRegistries();}
-	
+	public static void init(FMLInitializationEvent event) 
+	{
+		RegistryHandler.initRegistries();
+	}
+
 	@EventHandler
-	public static void postInit(FMLPostInitializationEvent event) {RegistryHandler.postInitRegistries();}
-	
+	public static void postInit(FMLPostInitializationEvent event) 
+	{
+		RegistryHandler.postInitRegistries();
+	}
+
 }

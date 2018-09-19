@@ -11,11 +11,11 @@ import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 import tree_of_chaos.leylines.LeyLines;
 
-public class TaqaBlock extends Block {
+public class MetalBlockBase extends Block {
 	
 	String name;
 
-    public TaqaBlock( String name) {
+    public MetalBlockBase( String name) {
 
     	super(Material.IRON);
         this.name = name;
