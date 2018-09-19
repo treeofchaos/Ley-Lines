@@ -16,9 +16,10 @@ import tree_of_chaos.leylines.blocks.QuartzitePillar;
 import tree_of_chaos.leylines.blocks.RitualCore;
 import tree_of_chaos.leylines.blocks.TaqaBlock;
 import tree_of_chaos.leylines.blocks.TaqaOreBlock;
+import tree_of_chaos.leylines.blocks.TaqaSand;
 
-public class BlockInit {
-	
+public class BlockInit 
+{	
 	/*Blocks making use of BlockBaseStone*/
 	public static BlockBaseStone QUARTZITE = new BlockBaseStone("quartzite");
 	public static BlockBaseStone QUARTZITE_BRICKS = new BlockBaseStone("quartzite_bricks");
@@ -32,7 +33,6 @@ public class BlockInit {
 	public static BlockBaseStone RWH_BLOCK = new BlockBaseStone("rwh_block");
 	public static BlockBaseStone ALJAHIM_BLOCK = new BlockBaseStone("aljahim_block");
 	public static BlockBaseStone QUA_BLOCK = new BlockBaseStone("qua_block");
-	public static BlockBaseStone TAQA_SAND = new BlockBaseStone("taqa_sand");
 	public static BlockBaseStone TAQA_SANDSTONE_CARVED = new BlockBaseStone("taqa_sandstone_carved");
 	public static BlockBaseStone TAQA_SANDSTONE_SMOOTH = new BlockBaseStone("taqa_sandstone_smooth");
 	public static BlockBaseStone TAQA_SANDSTONE = new BlockBaseStone("taqa_sandstone");
@@ -48,6 +48,7 @@ public class BlockInit {
 	public static TaqaOreBlock TAQA_ORE_BLOCK = new TaqaOreBlock("taqa_ore_block");
 	public static QuartzitePillar QUARTZITE_PILLAR = new QuartzitePillar("quartzite_pillar");
 	public static QuaOreBlock QUA_ORE_BLOCK = new QuaOreBlock("qua_ore_block");
+	public static TaqaSand TAQA_SAND = new TaqaSand("taqa_sand");
 	
 	public static void register(IForgeRegistry<Block> registry) {
 		
@@ -126,5 +127,4 @@ public class BlockInit {
 		registry.register(new ItemBlock(QUA_BLOCK).setRegistryName(QUA_BLOCK.getRegistryName()));
 		
 	}
-	
 }

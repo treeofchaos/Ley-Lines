@@ -5,7 +5,6 @@ import tree_of_chaos.leylines.init.BlockInit;
 
 public class TaqaDesert extends LeyLinesBiomes
 {
-	private static final String BlockInit = null;
 	public static Biome.BiomeProperties properties = new Biome.BiomeProperties("Taqa Desert");
 	
     static 
@@ -19,8 +18,8 @@ public class TaqaDesert extends LeyLinesBiomes
 	public TaqaDesert()
 	{
 		super(properties);
-        this.topBlock = BlockInit.taqa_sand.getDefaultState();
-        this.fillerBlock = BlockInit.taqa_sandstone.getDefaultState();
+        this.topBlock = BlockInit.TAQA_SAND.getDefaultState();
+        this.fillerBlock = BlockInit.TAQA_SANDSTONE.getDefaultState();
         this.decorator.treesPerChunk = -999;
 	}
 }

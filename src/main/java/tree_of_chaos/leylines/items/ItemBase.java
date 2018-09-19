@@ -1,5 +1,5 @@
 package tree_of_chaos.leylines.items;
-/*package tree_of_chaos.leylines.items;
+package tree_of_chaos.leylines.items;
 import tree_of_chaos.leylines.Main;
 import tree_of_chaos.leylines.ModItems;
 import tree_of_chaos.leylines.util.IHasModel;
