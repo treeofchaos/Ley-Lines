@@ -1,7 +1,7 @@
 package tree_of_chaos.leylines.items;
-package tree_of_chaos.leylines.items;
-import tree_of_chaos.leylines.Main;
-import tree_of_chaos.leylines.ModItems;
+
+import tree_of_chaos.leylines.LeyLines;
+import tree_of_chaos.leylines.init.ItemInit;
 import tree_of_chaos.leylines.util.IHasModel;
 
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
@@ -15,8 +15,8 @@ public class ItemBase extends Item implements IHasModel
 	{
 		setUnlocalizedName(name);
 		setRegistryName(name);
-		setCreativeTab(Main.creativeTab);
-		ModItems.ITEMS.add(this);
+		setCreativeTab(LeyLines.leylinestab);
+		ItemInit.ITEMS.add(this);
 	}
     @SideOnly(Side.CLIENT)
     public void initModel() {
@@ -27,4 +27,4 @@ public class ItemBase extends Item implements IHasModel
 	{
 		
 	}
-}*/
+}
