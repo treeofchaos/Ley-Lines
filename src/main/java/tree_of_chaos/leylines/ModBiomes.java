@@ -32,7 +32,7 @@ public class ModBiomes
 
 	public static void register(RegistryEvent.Register<Biome> event, Biome biome, BiomeManager.BiomeType type, String name, int weight, BiomeDictionary.Type... biomeDictTypes)
     {
-		biome.setRegistryName(new ResourceLocation(LeyLines.MOD_ID, name));
+		biome.setRegistryName(new ResourceLocation(LeyLines.modid, name));
 		event.getRegistry().register(biome);
 		for (BiomeDictionary.Type biomeDictType : biomeDictTypes) {
             BiomeDictionary.addTypes(biome, biomeDictType);
