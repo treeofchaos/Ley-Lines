@@ -22,7 +22,7 @@ public class BlockBaseStone extends Block {
         setRegistryName(name);
         setHardness(5F);
         setCreativeTab(LeyLines.leylinestab);
-        setHarvestLevel("pickaxe", 2);
+        setHarvestLevel("pickaxe", 1);
     }
 
     public void registerItemModel(Item item) {

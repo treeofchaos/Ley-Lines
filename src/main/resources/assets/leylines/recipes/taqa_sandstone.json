@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "TT",
+        "TT"
+    ],
+    "key": {
+        "T": {
+            "item": "leylines:taqa_sand"
+        }
+        },
+    "result": {
+        "item": "leylines:taqa_sandstone",
+        "count": 2
+    }
+}

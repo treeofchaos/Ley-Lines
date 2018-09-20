@@ -22,6 +22,7 @@ public class BlockInit
 	/*Blocks making use of BlockBaseStone*/
 	public static BlockBaseStone QUARTZITE = new BlockBaseStone("quartzite");
 	public static BlockBaseStone QUARTZITE_BRICKS = new BlockBaseStone("quartzite_bricks");
+	public static BlockBaseStone QUARTZITE_CHISELED = new BlockBaseStone("quartzite_chiseled");
 	public static BlockBaseStone QUARTZITE_DARK = new BlockBaseStone("quartzite_dark");
 	public static BlockBaseStone QUARTZITE_LAYERS = new BlockBaseStone("quartzite_layers");
 	public static BlockBaseStone QUARTZITE_POLISHED = new BlockBaseStone("quartzite_polished");
@@ -54,7 +55,7 @@ public class BlockInit
 	public static void register(IForgeRegistry<Block> registry) 
 	{
 		
-		registry.registerAll(QUARTZITE, QUARTZITE_BRICKS, QUARTZITE_DARK, QUARTZITE_LAYERS, QUARTZITE_PILLAR, QUARTZITE_POLISHED,
+		registry.registerAll(QUARTZITE, QUARTZITE_BRICKS, QUARTZITE_CHISELED, QUARTZITE_DARK, QUARTZITE_LAYERS, QUARTZITE_PILLAR, QUARTZITE_POLISHED,
 				QUARTZITE_PRISM, QUARTZITE_SPIRAL, QUARTZITE_STACKED, QUARTZITE_TILES, RWH_BLOCK, ALJAHIM_BLOCK, QUA_BLOCK, CONDUIT,
 				CONDUIT_CORE, FORGE_CORE, INFUSION_CORE, NODE_CORE, RITUAL_CORE, TAQA_BLOCK, TAQA_ORE_BLOCK, TAQA_SAND, TAQA_SANDSTONE_CARVED,
 				TAQA_SANDSTONE_SMOOTH, TAQA_SANDSTONE, QUA_ORE_BLOCK);
@@ -64,6 +65,7 @@ public class BlockInit
 	{
 		QUARTZITE.registerItemModel(Item.getItemFromBlock(QUARTZITE));
 		QUARTZITE_BRICKS.registerItemModel(Item.getItemFromBlock(QUARTZITE_BRICKS));
+		QUARTZITE_CHISELED.registerItemModel(Item.getItemFromBlock(QUARTZITE_CHISELED));
 		QUARTZITE_DARK.registerItemModel(Item.getItemFromBlock(QUARTZITE_DARK));
 		QUARTZITE_LAYERS.registerItemModel(Item.getItemFromBlock(QUARTZITE_LAYERS));
 		QUARTZITE_PILLAR.registerItemModel(Item.getItemFromBlock(QUARTZITE_PILLAR));
@@ -98,6 +100,7 @@ public class BlockInit
 	{	
 		registry.register(new ItemBlock(QUARTZITE).setRegistryName(QUARTZITE.getRegistryName()));
 		registry.register(new ItemBlock(QUARTZITE_BRICKS).setRegistryName(QUARTZITE_BRICKS.getRegistryName()));
+		registry.register(new ItemBlock(QUARTZITE_CHISELED).setRegistryName(QUARTZITE_CHISELED.getRegistryName()));
 		registry.register(new ItemBlock(QUARTZITE_DARK).setRegistryName(QUARTZITE_DARK.getRegistryName()));
 		registry.register(new ItemBlock(QUARTZITE_LAYERS).setRegistryName(QUARTZITE_LAYERS.getRegistryName()));
 		registry.register(new ItemBlock(QUARTZITE_PILLAR).setRegistryName(QUARTZITE_PILLAR.getRegistryName()));
