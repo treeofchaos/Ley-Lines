@@ -1,12 +1,8 @@
 package tree_of_chaos.leylines.tools;
-/*package tree_of_chaos.leylines.tools;
-import tree_of_chaos.leylines.Main;
-import tree_of_chaos.leylines.ModItems;
-import tree_of_chaos.leylines.util.IHasModel;
-import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.ItemAxe;
 import tree_of_chaos.leylines.LeyLines;
-import net.minecraft.item.Item.ToolMaterial;
+import tree_of_chaos.leylines.init.ItemInit;
+import tree_of_chaos.leylines.util.IHasModel;
 public class ToolAxe extends ItemAxe implements IHasModel
 {
 	public ToolAxe(String name, ToolMaterial material)
@@ -15,12 +11,11 @@ public class ToolAxe extends ItemAxe implements IHasModel
 		setUnlocalizedName(name);
 		setRegistryName(name);
 		setCreativeTab(LeyLines.leylinestab);
-		ModItems.ITEMS.add(this);
-		
+		ItemInit.ITEMS.add(this);	
 	}
 	public void registerModels() 
 	{
-		Main.proxy.registerItemRenderer(this,0,"inventory");
+		LeyLines.proxy.registerItemRenderer(this,0,"inventory");
 	}
-}*/
+}
 

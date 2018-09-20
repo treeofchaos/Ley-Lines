@@ -2,22 +2,20 @@ package tree_of_chaos.leylines.init;
 import java.util.ArrayList;
 import java.util.List;
 
-//import tree_of_chaos.leylines.tools.ToolArrow;
-//import tree_of_chaos.leylines.tools.ToolAxe;
-//import tree_of_chaos.leylines.tools.ToolBow;
-//import tree_of_chaos.leylines.tools.ToolPickaxe;
-//import tree_of_chaos.leylines.tools.ToolSword;
-import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import net.minecraft.item.Item.ToolMaterial;
 import net.minecraft.item.ItemArrow;
 import net.minecraft.item.ItemAxe;
 import net.minecraft.item.ItemBow;
 import net.minecraft.item.ItemPickaxe;
-import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemSword;
 import net.minecraftforge.common.util.EnumHelper;
+import tree_of_chaos.leylines.items.ItemBase;
+import tree_of_chaos.leylines.tools.ToolArrow;
+import tree_of_chaos.leylines.tools.ToolAxe;
 import tree_of_chaos.leylines.tools.ToolBow;
+import tree_of_chaos.leylines.tools.ToolPickaxe;
+import tree_of_chaos.leylines.tools.ToolSword;
 public class ItemInit 
 {
 	//tool materials
@@ -29,7 +27,7 @@ public class ItemInit
 	
 	//items
 	public static final List<Item> ITEMS = new ArrayList <Item>();
-	/*public static final Item TAQA_INGOT = new ItemBase("taqa_ingot");
+	public static final Item TAQA_INGOT = new ItemBase("taqa_ingot");
 	public static final Item CHARGED_TAQA_INGOT = new ItemBase("charged_taqa_ingot");
 	public static final Item QUA_INGOT = new ItemBase("qua_ingot");
 	public static final Item RWH_INGOT = new ItemBase("rwh_ingot");
@@ -42,7 +40,7 @@ public class ItemInit
 	
 	public static final ItemArrow ALJAHIM_ARROW = new ToolArrow("aljahim_arrow", TOOL_ALJAHIM);
 	
-	//armor*/
+	//armor
 	
 }
 		
