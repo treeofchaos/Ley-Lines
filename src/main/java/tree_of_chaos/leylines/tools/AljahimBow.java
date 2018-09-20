@@ -43,14 +43,10 @@ public class AljahimBow extends ItemBow
 
 	public static AljahimBow create() {
 		AljahimBow res = new AljahimBow();
-		res.init();
 		MinecraftForge.EVENT_BUS.register(res);
 		return res;
 	}
 
-	protected void init() {
-		ItemInit.ITEMS.add(this);    
-	}
 
 	public void onPlayerStoppedUsing(ItemStack stack, World worldIn, EntityLivingBase entityLiving, int timeLeft) {
 

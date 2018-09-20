@@ -19,7 +19,7 @@ import tree_of_chaos.leylines.blocks.TaqaSand;
 
 public class BlockInit 
 {
-	/*Blocks making use of BlockBaseStone*/
+	//Blocks making use of BlockBaseStone
 	public static BlockBaseStone QUARTZITE = new BlockBaseStone("quartzite");
 	public static BlockBaseStone QUARTZITE_BRICKS = new BlockBaseStone("quartzite_bricks");
 	public static BlockBaseStone QUARTZITE_DARK = new BlockBaseStone("quartzite_dark");
@@ -39,7 +39,7 @@ public class BlockInit
 	public static MetalBlockBase QUA_BLOCK = new MetalBlockBase("qua_block");
 	public static MetalBlockBase TAQA_BLOCK = new MetalBlockBase("taqa_block");
 	
-	/*Blocks making use of their own Block Class */
+	//Blocks making use of their own Block Class
 	public static Conduit CONDUIT = new Conduit("conduit");
 	public static ConduitCore CONDUIT_CORE = new ConduitCore("conduit_core");
 	public static ForgeCore FORGE_CORE = new ForgeCore("forge_core");

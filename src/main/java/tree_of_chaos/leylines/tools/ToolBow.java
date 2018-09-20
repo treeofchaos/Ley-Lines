@@ -23,7 +23,6 @@ public class ToolBow extends ItemBow implements IHasModel
 		setUnlocalizedName(name);
 		setRegistryName(name);
 		setCreativeTab(LeyLines.leylinestab);
-		ItemInit.ITEMS.add(this);
 
 		this.addPropertyOverride(new ResourceLocation("pull"), new IItemPropertyGetter()
 		{
