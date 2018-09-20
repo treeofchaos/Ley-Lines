@@ -126,7 +126,5 @@ public class BlockInit
 		registry.register(new ItemBlock(TAQA_SANDSTONE_CARVED).setRegistryName(TAQA_SANDSTONE_CARVED.getRegistryName()));
 		registry.register(new ItemBlock(TAQA_SANDSTONE_SMOOTH).setRegistryName(TAQA_SANDSTONE_SMOOTH.getRegistryName()));
 		registry.register(new ItemBlock(TAQA_SANDSTONE).setRegistryName(TAQA_SANDSTONE.getRegistryName()));
-		registry.register(new ItemBlock(QUA_BLOCK).setRegistryName(QUA_BLOCK.getRegistryName()));
-		
 	}
 }
