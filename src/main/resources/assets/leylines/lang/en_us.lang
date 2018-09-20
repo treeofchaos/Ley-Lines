@@ -23,3 +23,6 @@ tile.rwh_block.name=Rwh Block
 tile.taqa_block.name=Taqa Block
 tile.taqa_ore_block.name=Taqa Ore
 tile.taqa_sand.name=Taqa Sand
+tile.taqa_sandstone.name=Taqa Sandstone
+tile.taqa_sandstone_smooth.name=Smooth Taqa Sandstone
+tile.taqa_sandstone_carved.name=Carved Taqa Sandstone
