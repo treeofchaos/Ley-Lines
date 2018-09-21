@@ -1,6 +1,7 @@
-package tree_of_chaos.leylines.tools;
+package tree_of_chaos.leylines.items;
 import tree_of_chaos.leylines.LeyLines;
 import tree_of_chaos.leylines.init.ItemInit;
+import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 //import tree_of_chaos.leylines.items.ItemBase;
 //import tree_of_chaos.leylines.util.handlers.RegistryHandler;
 import net.minecraft.enchantment.EnchantmentHelper;
@@ -19,6 +20,7 @@ import net.minecraft.util.EnumHand;
 import net.minecraft.util.SoundCategory;
 import net.minecraft.world.World;
 import net.minecraftforge.client.event.FOVUpdateEvent;
+import net.minecraftforge.client.model.ModelLoader;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.ForgeEventFactory;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
@@ -43,14 +45,15 @@ public class AljahimBow extends ItemBow
 
 	public static AljahimBow create() {
 		AljahimBow res = new AljahimBow();
-		res.init();
 		MinecraftForge.EVENT_BUS.register(res);
 		return res;
 	}
-
-	protected void init() {
-		ItemInit.ITEMS.add(this);    
-	}
+    @SideOnly(Side.CLIENT)
+    public void initModel()
+    {
+        ModelLoader.setCustomModelResourceLocation(this, 0, new ModelResourceLocation(getRegistryName(), "inventory"));
+    }
+    
 
 	public void onPlayerStoppedUsing(ItemStack stack, World worldIn, EntityLivingBase entityLiving, int timeLeft) {
 

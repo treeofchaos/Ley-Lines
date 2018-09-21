@@ -1,4 +1,4 @@
-package tree_of_chaos.leylines.tools;
+package tree_of_chaos.leylines.items;
 import javax.annotation.Nullable;
 
 import tree_of_chaos.leylines.init.ItemInit;
@@ -23,7 +23,6 @@ public class ToolBow extends ItemBow implements IHasModel
 		setUnlocalizedName(name);
 		setRegistryName(name);
 		setCreativeTab(LeyLines.leylinestab);
-		ItemInit.ITEMS.add(this);
 
 		this.addPropertyOverride(new ResourceLocation("pull"), new IItemPropertyGetter()
 		{

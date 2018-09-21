@@ -31,7 +31,7 @@ public class RegistryHandler {
     public static void onItemRegister(RegistryEvent.Register<Item> event) 
     {
     	
-        ItemInit.register(event.getRegistry());
+        //ItemInit.register(event.getRegistry());
         BlockInit.registerItemBlocks(event.getRegistry());
         
     }
@@ -48,7 +48,7 @@ public class RegistryHandler {
     public static void onModelRegister(ModelRegistryEvent event) 
     {
     	
-      /*  ItemInit.registerModels(); */
+    	//ItemInit.registerModels();
         BlockInit.registerModels();
         
     }
