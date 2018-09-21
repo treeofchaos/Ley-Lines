@@ -89,7 +89,7 @@ public class ToolBow extends ItemBow implements IHasModel
 	{
 		return EnumAction.BOW;
 	}
-
+	
 	@Override
 	public void registerModels() {
 		// TODO Auto-generated method stub

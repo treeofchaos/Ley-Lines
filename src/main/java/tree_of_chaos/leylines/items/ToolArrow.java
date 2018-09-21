@@ -17,6 +17,12 @@ import tree_of_chaos.leylines.LeyLines;
 		{
 			LeyLines.proxy.registerItemRenderer(this,0,"inventory");
 		}
+		
+		protected float getGravityVelocity()
+		{
+		return 0.01F;
+		}
+		
 	    public void initModel()
 	    {
 	        ModelLoader.setCustomModelResourceLocation(this, 0, new ModelResourceLocation(getRegistryName(), "inventory"));

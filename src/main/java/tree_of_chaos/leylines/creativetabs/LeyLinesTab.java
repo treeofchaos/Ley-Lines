@@ -8,8 +8,15 @@ public class LeyLinesTab extends CreativeTabs
 	public LeyLinesTab(String label) 
 	{
 		super("leylinestab");
+		setBackgroundImageName("item_search.png");
+
 	}
 	public ItemStack getTabIconItem() {
 		return new ItemStack(Item.getItemFromBlock(BlockInit.TAQA_BLOCK));
+	}
+	
+	@Override
+	public boolean hasSearchBar() {
+		return true;
 	}
 }
