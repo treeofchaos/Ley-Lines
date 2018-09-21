@@ -9,9 +9,11 @@ import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import tree_of_chaos.leylines.creativetabs.LeyLinesTab;
+import tree_of_chaos.leylines.init.BlockInit;
 import tree_of_chaos.leylines.proxy.CommonProxy;
 import tree_of_chaos.leylines.util.Reference;
 import tree_of_chaos.leylines.util.handlers.RegistryHandler;
+import net.minecraftforge.oredict.OreDictionary;
 
 @Mod(modid = Reference.MOD_ID, name = Reference.NAME, version = Reference.VERSION)
 public class LeyLines 
@@ -43,5 +45,4 @@ public class LeyLines
 	{
 		RegistryHandler.postInitRegistries();
 	}
-
 }

@@ -11,12 +11,11 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 import net.minecraftforge.oredict.OreDictionary;
 import tree_of_chaos.leylines.LeyLines;
 
-public class BlockBaseStone extends Block
+public class BlockBaseSandstone extends Block
 {
-
 	String name;
 
-    public BlockBaseStone( String name) {
+    public BlockBaseSandstone( String name) {
 
     	super(Material.ROCK);
         this.name = name;
@@ -40,4 +39,5 @@ public class BlockBaseStone extends Block
     {
         ModelLoader.setCustomModelResourceLocation(Item.getItemFromBlock(this), 0, new ModelResourceLocation(getRegistryName(), "inventory"));
     }
+
 }

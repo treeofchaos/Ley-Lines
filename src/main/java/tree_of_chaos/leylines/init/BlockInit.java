@@ -4,6 +4,7 @@ import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemBlock;
 import net.minecraftforge.registries.IForgeRegistry;
+import tree_of_chaos.leylines.blocks.BlockBaseSandstone;
 import tree_of_chaos.leylines.blocks.BlockBaseStone;
 import tree_of_chaos.leylines.blocks.Conduit;
 import tree_of_chaos.leylines.blocks.ConduitCore;
@@ -30,9 +31,11 @@ public class BlockInit
 	public static BlockBaseStone QUARTZITE_SPIRAL = new BlockBaseStone("quartzite_spiral");
 	public static BlockBaseStone QUARTZITE_STACKED = new BlockBaseStone("quartzite_stacked");
 	public static BlockBaseStone QUARTZITE_TILES = new BlockBaseStone("quartzite_tiles");
-	public static BlockBaseStone TAQA_SANDSTONE_CARVED = new BlockBaseStone("taqa_sandstone_carved");
-	public static BlockBaseStone TAQA_SANDSTONE_SMOOTH = new BlockBaseStone("taqa_sandstone_smooth");
-	public static BlockBaseStone TAQA_SANDSTONE = new BlockBaseStone("taqa_sandstone");
+	
+	//Blocks using BlockBaseSandstone
+	public static BlockBaseSandstone TAQA_SANDSTONE_CARVED = new BlockBaseSandstone("taqa_sandstone_carved");
+	public static BlockBaseSandstone TAQA_SANDSTONE_SMOOTH = new BlockBaseSandstone("taqa_sandstone_smooth");
+	public static BlockBaseSandstone TAQA_SANDSTONE = new BlockBaseSandstone("taqa_sandstone");
 	
 	//Blocks using MetalBlockBase
 	public static MetalBlockBase RWH_BLOCK = new MetalBlockBase("rwh_block");

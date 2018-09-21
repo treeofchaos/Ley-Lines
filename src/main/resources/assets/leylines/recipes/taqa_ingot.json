@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "leylines:taqa_block"
+        }
+    ],
+    "result": {
+        "item": "leylines:taqa_ingot",
+        "count": 9
+    }
+}
