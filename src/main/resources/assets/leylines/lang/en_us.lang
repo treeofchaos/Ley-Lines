@@ -1,13 +1,16 @@
 itemGroup.leylinestab=Ley Lines
 
-item.aljahim_arrow=Aljahim Arrow
-item.aljahim_bow=Aljahim Bow
-item.aljahim_ingot=Aljahim Ingot
-item.charged_taqa_ingot=Charged Taqa Ingot
-item.qua_ingot=Qua Ingot
-item.qua_sword=Qua Sword
-item.taqa_ingot=Taqa Ingot
-item.taqa_pickaxe=Taqa Pickaxe
+item.aljahim_ingot.name=Aljahim Ingot
+item.qua_ingot.name=Qua Ingot
+item.taqa_ingot.name=Taqa Ingot
+item.charged_taqa_ingot.name=Charged Taqa Ingot
+item.rwh_ingot.name=Rwh Ingot
+
+item.aljahim_arrow.name=Aljahim Arrow
+item.aljahim_bow.name=Aljahim Bow
+item.qua_sword.name=Qua Sword
+item.taqa_pickaxe.name=Taqa Pickaxe
+item.rwh_axe.name=Rwh Axe
 
 tile.aljahim_block.name=Aljahim Block
 tile.conduit.name=Conduit

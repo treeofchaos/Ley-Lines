@@ -2,6 +2,7 @@ package tree_of_chaos.leylines.items;
 import javax.annotation.Nullable;
 
 import tree_of_chaos.leylines.init.ItemInit;
+import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
@@ -12,6 +13,7 @@ import net.minecraft.item.IItemPropertyGetter;
 import net.minecraft.util.EnumHand;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.world.World;
+import net.minecraftforge.client.model.ModelLoader;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 import tree_of_chaos.leylines.LeyLines;
@@ -45,10 +47,10 @@ public class ToolBow extends ItemBow implements IHasModel
 		});
 	}
 	
-	public void registerModels() 
-	{
-		LeyLines.proxy.registerItemRenderer(this,0,"inventory");
-	}
+    public void initModel()
+    {
+        ModelLoader.setCustomModelResourceLocation(this, 0, new ModelResourceLocation(getRegistryName(), "inventory"));
+    }
 	
 	
     private ItemStack findAmmo(EntityPlayer player)
@@ -86,5 +88,11 @@ public class ToolBow extends ItemBow implements IHasModel
 	public EnumAction getItemUseAction(ItemStack par1ItemStack)
 	{
 		return EnumAction.BOW;
+	}
+
+	@Override
+	public void registerModels() {
+		// TODO Auto-generated method stub
+		
 	}
 }

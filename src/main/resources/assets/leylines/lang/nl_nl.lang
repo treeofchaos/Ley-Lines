@@ -1,5 +1,11 @@
 itemGroup.leylines=Ley Lines
 
+item.aljahim_arrow.name=Aljahim Pijl
+item.aljahim_bow.name=Aljahim Boog
+item.qua_sword.name=Qua Zwaard
+item.taqa_pickaxe.name=Taqa Pikhouweel
+item.rwh_axe.name=Rwh Bijl
+
 tile.leylines.taqa_ore_block.name=Taqa Erts
 tile.leylines.quartzite.name=Quartzite
 tile.leylines.aljahim_block.name=Aljahim Blok

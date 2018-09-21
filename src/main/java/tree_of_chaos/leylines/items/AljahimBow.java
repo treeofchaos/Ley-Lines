@@ -48,7 +48,6 @@ public class AljahimBow extends ItemBow
 		MinecraftForge.EVENT_BUS.register(res);
 		return res;
 	}
-    @SideOnly(Side.CLIENT)
     public void initModel()
     {
         ModelLoader.setCustomModelResourceLocation(this, 0, new ModelResourceLocation(getRegistryName(), "inventory"));

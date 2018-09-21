@@ -3,9 +3,8 @@ import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.item.ItemAxe;
 import net.minecraftforge.client.model.ModelLoader;
 import tree_of_chaos.leylines.LeyLines;
-import tree_of_chaos.leylines.init.ItemInit;
-import tree_of_chaos.leylines.util.IHasModel;
-public class ToolAxe extends ItemAxe implements IHasModel
+
+public class ToolAxe extends ItemAxe
 {
 	public ToolAxe(String name, ToolMaterial material)
 	{
