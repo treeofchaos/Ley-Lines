@@ -1,16 +1,27 @@
 package tree_of_chaos.leylines.blocks;
 
+import java.util.Collection;
+
 import net.minecraft.block.Block;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
+import net.minecraft.block.state.IBlockState;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
+import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.Item;
+import net.minecraft.util.EnumFacing;
+import net.minecraft.util.EnumHand;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.world.World;
 import net.minecraftforge.client.model.ModelLoader;
+import net.minecraftforge.common.capabilities.Capability;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 import tree_of_chaos.leylines.LeyLines;
+import tree_of_chaos.leylines.multiblock.IMaster;
 
-public class ConduitCore extends Block {
+public class ConduitCore extends Block implements IMaster
+{
 	
 	String name;
 	
@@ -36,5 +47,41 @@ public class ConduitCore extends Block {
     public void registerItemModel(Item item) {
     	LeyLines.proxy.registerItemRenderer(item, 0, name);
     }
-    
+
+	@Override
+	public void breakBlock(World world, BlockPos pos, IBlockState state, EntityPlayer player) 
+	{
+		
+	}
+
+	@Override
+	public boolean activate(World world, BlockPos pos, IBlockState state, EntityPlayer player, EnumHand hand,
+			EnumFacing face, float hitX, float hitY, float hitZ) 
+	{
+		return false;
+	}
+
+	@Override
+	public Collection<BlockPos> getSlaves() 
+	{
+		return null;
+	}
+
+	@Override
+	public void addSlave(BlockPos p) 
+	{
+		
+	}
+
+	@Override
+	public <T> T getCapability(Capability<T> c, EnumFacing face, BlockPos pos) 
+	{
+		return null;
+	}
+
+	@Override
+	public boolean hasCapability(Capability c, EnumFacing face, BlockPos pos) 
+	{
+		return false;
+	} 
 }

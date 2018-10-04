@@ -16,8 +16,8 @@ public class BlockBaseStone extends Block
 
 	String name;
 
-    public BlockBaseStone( String name) {
-
+    public BlockBaseStone( String name) 
+    {
     	super(Material.ROCK);
         this.name = name;
         setUnlocalizedName(name);
@@ -27,7 +27,8 @@ public class BlockBaseStone extends Block
         setHarvestLevel("pickaxe", 1);
     }
 
-    public void registerItemModel(Item item) {
+    public void registerItemModel(Item item) 
+    {
     	LeyLines.proxy.registerItemRenderer(item, 0, name);
     }
 

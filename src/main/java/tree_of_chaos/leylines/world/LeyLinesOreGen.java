@@ -7,6 +7,7 @@ import net.minecraft.world.chunk.IChunkProvider;
 import net.minecraft.world.gen.IChunkGenerator;
 import net.minecraft.world.gen.feature.WorldGenMinable;
 import net.minecraftforge.fml.common.IWorldGenerator;
+import net.minecraftforge.fml.common.Mod;
 import tree_of_chaos.leylines.init.BlockInit;
 
 public class LeyLinesOreGen implements IWorldGenerator 
@@ -41,5 +42,4 @@ public class LeyLinesOreGen implements IWorldGenerator
 			generator.generate(world, random, pos);
 		}
 	}
-
 }

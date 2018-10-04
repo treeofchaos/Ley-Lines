@@ -1,16 +1,14 @@
 package tree_of_chaos.leylines.init;
 
-//import tree_of_chaos.leylines.tools.ToolAxe;
-//import tree_of_chaos.leylines.tools.ToolBow;
-//import tree_of_chaos.leylines.tools.ToolPickaxe;
-//import tree_of_chaos.leylines.tools.ToolSword;
-
+import net.minecraft.init.SoundEvents;
+import net.minecraft.inventory.EntityEquipmentSlot;
+import net.minecraft.item.Item;
+import net.minecraft.item.Item.ToolMaterial;
+import net.minecraft.item.ItemArmor;
+import net.minecraftforge.common.util.EnumHelper;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 import net.minecraftforge.registries.IForgeRegistry;
-import net.minecraft.item.Item;
-import net.minecraft.item.Item.ToolMaterial;
-import net.minecraftforge.common.util.EnumHelper;
 import tree_of_chaos.leylines.items.ItemBase;
 import tree_of_chaos.leylines.items.ToolArrow;
 import tree_of_chaos.leylines.items.ToolAxe;
@@ -25,6 +23,7 @@ public class ItemInit
 	public static final ToolMaterial RWH = EnumHelper.addToolMaterial("RWH", 4, 1467, 20.0f, 9.0f, 35);
 	public static final ToolMaterial TAQA = EnumHelper.addToolMaterial("TAQA", 4, 1267, 10.0f, 7.0f, 30);
 	public static final ToolMaterial ALJAHIM = EnumHelper.addToolMaterial("ALJAHIM", 4, 2000, 10.5f, 13.0f, 25);
+	public static final ItemArmor.ArmorMaterial ARMOR_TAQA = EnumHelper.addArmorMaterial("TAQA", "leylines" + ":taqa", 15, new int[]{4, 5, 6, 2}, 15, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 0.0F);
 	
 	//items
 	public static final ItemBase TAQA_INGOT = new ItemBase("taqa_ingot");
@@ -43,7 +42,8 @@ public class ItemInit
 	//armor
 	
     @SideOnly(Side.CLIENT)
-	public static void initModels() {
+	public static void initModels() 
+    {
 		TAQA_INGOT.initModel();
 		CHARGED_TAQA_INGOT.initModel();
 		QUA_INGOT.initModel();

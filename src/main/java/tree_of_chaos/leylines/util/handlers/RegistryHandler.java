@@ -10,8 +10,8 @@ import tree_of_chaos.leylines.init.BlockInit;
 import tree_of_chaos.leylines.init.ItemInit;
 
 @EventBusSubscriber
-public class RegistryHandler {
-
+public class RegistryHandler 
+{
 	public static void preInitRegistries() 
 	{
 
@@ -33,7 +33,6 @@ public class RegistryHandler {
     	
         ItemInit.registerItems(event.getRegistry());
         BlockInit.registerItemBlocks(event.getRegistry());
-        
     }
     
     @SubscribeEvent
@@ -50,8 +49,5 @@ public class RegistryHandler {
     	
     	ItemInit.initModels();
         BlockInit.registerModels();
-        
-    }
-
-	    
+    }   
 }

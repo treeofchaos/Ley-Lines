@@ -1,8 +1,12 @@
 package tree_of_chaos.leylines.world.biomes;
+import java.util.Random;
+
 import net.minecraft.init.Biomes;
 import net.minecraft.init.Blocks;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.biome.Biome;
+import net.minecraft.world.gen.feature.WorldGenAbstractTree;
+import net.minecraft.world.gen.feature.WorldGenerator;
 
 public class EntForest extends LeyLinesBiomes
 {
@@ -22,6 +26,11 @@ public class EntForest extends LeyLinesBiomes
         this.topBlock = Blocks.GRASS.getDefaultState();
         this.fillerBlock = Blocks.DIRT.getDefaultState();
         this.decorator.treesPerChunk = 25;
+	}
+	@Override
+	public WorldGenAbstractTree getRandomTreeFeature(Random rand)
+	{
+		return (WorldGenAbstractTree)(rand.nextInt(10) == 0 ? BIG_TREE_FEATURE : TREE_FEATURE);
 	}
     @Override
     public int getGrassColorAtPos(BlockPos blockPos) 
