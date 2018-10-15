@@ -19,9 +19,7 @@ import tree_of_chaos.leylines.world.LeyLinesOreGen;
 @Mod(modid = Reference.MOD_ID, name = Reference.NAME, version = Reference.VERSION)
 public class LeyLines 
 {
-
 	public static final CreativeTabs leylinestab = new LeyLinesTab("leylinestab");
-
 
 	@Instance
 	public static LeyLines instance;

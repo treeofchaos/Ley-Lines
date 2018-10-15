@@ -1,4 +1,4 @@
-package tree_of_chaos.leylines.blocks;
+package tree_of_chaos.leylines.blocks.tileentities;
 
 import java.util.Collection;
 
@@ -9,6 +9,7 @@ import net.minecraft.block.state.IBlockState;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.Item;
+import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.EnumFacing;
 import net.minecraft.util.EnumHand;
 import net.minecraft.util.math.BlockPos;
@@ -20,13 +21,13 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 import tree_of_chaos.leylines.LeyLines;
 import tree_of_chaos.leylines.multiblock.IMaster;
 
-public class ConduitCore extends Block implements IMaster
+public class ConduitCore extends BlockTileEntity implements IMaster
 {
 	
 	String name;
 	
 	public ConduitCore(String name) {
-		super(Material.ROCK);
+		super(Material.ROCK, "conduitcore");
 		this.name = name;
 		setUnlocalizedName(name);
 	    setRegistryName(name);
@@ -83,5 +84,17 @@ public class ConduitCore extends Block implements IMaster
 	public boolean hasCapability(Capability c, EnumFacing face, BlockPos pos) 
 	{
 		return false;
+	}
+
+	@Override
+	public Class getTileEntityClass() 
+	{
+		return null;
+	}
+
+	@Override
+	public TileEntity createTileEntity(World world, IBlockState state) 
+	{
+		return null;
 	} 
 }

@@ -7,16 +7,16 @@ import net.minecraftforge.registries.IForgeRegistry;
 import tree_of_chaos.leylines.blocks.BlockBaseSandstone;
 import tree_of_chaos.leylines.blocks.BlockBaseStone;
 import tree_of_chaos.leylines.blocks.Conduit;
-import tree_of_chaos.leylines.blocks.ConduitCore;
-import tree_of_chaos.leylines.blocks.ForgeCore;
 import tree_of_chaos.leylines.blocks.InfusionCore;
 import tree_of_chaos.leylines.blocks.MetalBlockBase;
-import tree_of_chaos.leylines.blocks.NodeCore;
 import tree_of_chaos.leylines.blocks.QuaOreBlock;
 import tree_of_chaos.leylines.blocks.QuartzitePillar;
-import tree_of_chaos.leylines.blocks.RitualCore;
 import tree_of_chaos.leylines.blocks.TaqaOreBlock;
 import tree_of_chaos.leylines.blocks.TaqaSand;
+import tree_of_chaos.leylines.blocks.tileentities.ConduitCore;
+import tree_of_chaos.leylines.blocks.tileentities.ForgeCore;
+import tree_of_chaos.leylines.blocks.tileentities.NodeCore;
+import tree_of_chaos.leylines.blocks.tileentities.RitualCore;
 
 public class BlockInit 
 {
