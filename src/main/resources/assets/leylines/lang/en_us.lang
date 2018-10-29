@@ -1,0 +1,40 @@
+itemGroup.leylinestab=Ley Lines
+
+item.aljahim_ingot.name=Aljahim Ingot
+item.qua_ingot.name=Qua Ingot
+item.taqa_ingot.name=Taqa Ingot
+item.charged_taqa_ingot.name=Charged Taqa Ingot
+item.rwh_ingot.name=Rwh Ingot
+
+item.aljahim_arrow.name=Aljahim Arrow
+item.aljahim_bow.name=Aljahim Bow
+item.qua_sword.name=Qua Sword
+item.taqa_pickaxe.name=Taqa Pickaxe
+item.rwh_axe.name=Rwh Axe
+
+tile.aljahim_block.name=Aljahim Block
+tile.conduit.name=Conduit
+tile.conduit_core.name=Conduit Core
+tile.forge_core.name=Forge Core
+tile.infusion_core.name=Infusion Core
+tile.node_core.name=Node Core
+tile.qua_block.name=Qua Block
+tile.qua_ore_block.name=Qua Ore
+tile.quartzite.name=Quartzite
+tile.quartzite_bricks.name=Quartzite Bricks
+tile.quartzite_chiseled.name=Chiseled Quartzite
+tile.quartzite_dark.name=Dark Quartzite
+tile.quartzite_layers.name=Layered Quartzite
+tile.quartzite_pillar.name=Quartzite Pillar
+tile.quartzite_polished.name=Polished Quartzite
+tile.quartzite_prism.name=Quartzite Prism
+tile.quartzite_spiral.name=Quartzite Spiral
+tile.quartzite_stacked.name=Stacked Quartzite
+tile.quartzite_tiles.name=Quartzite Tiles
+tile.rwh_block.name=Rwh Block
+tile.taqa_block.name=Taqa Block
+tile.taqa_ore_block.name=Taqa Ore
+tile.taqa_sand.name=Taqa Sand
+tile.taqa_sandstone.name=Taqa Sandstone
+tile.taqa_sandstone_smooth.name=Smooth Taqa Sandstone
+tile.taqa_sandstone_carved.name=Carved Taqa Sandstone

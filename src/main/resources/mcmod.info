@@ -1,0 +1,16 @@
+[
+{
+  "modid": "leylines",
+  "name": "Ley Lines",
+  "description": "A magic mod revolving around ley lines and manipulating the magic in the world",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["tree_of_chaos"],
+  "credits": "Halyo_Alex for texture work, Farcr for textures and models, TheDutchMC for ideas and help with coding, Martacus for getting the bow working, EpicSquid for fixing my idiocy occasionally",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]

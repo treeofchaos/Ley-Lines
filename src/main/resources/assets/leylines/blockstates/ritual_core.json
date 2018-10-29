@@ -1,0 +1,10 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+    "model": "leylines:ritual_core"
+  },
+  "variants": {
+    "normal": [{}],
+    "inventory": [{}]
+  }
+}

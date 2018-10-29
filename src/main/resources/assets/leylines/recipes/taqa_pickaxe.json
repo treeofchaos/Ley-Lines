@@ -1,0 +1,21 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "TTT",
+        " S ",
+        " S "
+    ],
+    "key": {
+        "T": {
+            "item": "leylines:taqa_ingot"
+        },
+        "S":{
+            "item": "minecraft:stick"
+            }
+        },
+    "result": {
+        "item": "leylines:taqa_pickaxe",
+        "count": 1
+    }
+   }
+}

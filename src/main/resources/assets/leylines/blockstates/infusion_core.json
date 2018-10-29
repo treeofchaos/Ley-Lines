@@ -1,0 +1,10 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+    "model": "leylines:infusion_core"
+  },
+  "variants": {
+    "normal": [{}],
+    "inventory": [{}]
+  }
+}

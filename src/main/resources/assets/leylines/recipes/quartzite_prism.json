@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "QQ",
+        "QQ"
+    ],
+    "key": {
+        "Q": {
+            "item": "leylines:quartzite_polished"
+        }
+        },
+    "result": {
+        "item": "leylines:quartzite_prism",
+        "count": 4
+    }
+}

@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "leylines:quartzite_bricks"
+        }
+    ],
+    "result": {
+        "item": "leylines:quartzite_chiseled",
+        "count": 1
+    }
+}

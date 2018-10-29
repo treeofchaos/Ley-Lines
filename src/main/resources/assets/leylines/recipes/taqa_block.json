@@ -1,0 +1,18 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "TTT",
+        "TTT",
+        "TTT"
+    ],
+    "key": {
+        "T": {
+            "item": "leylines:taqa_ingot"
+        }
+        },
+    "result": {
+        "item": "leylines:taqa_block",
+        "count": 1
+    }
+   }
+}

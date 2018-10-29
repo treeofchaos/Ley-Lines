@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "leylines:taqa_sandstone_carved"
+        }
+    ],
+    "result": {
+        "item": "leylines:taqa_sandstone_smooth",
+        "count": 1
+    }
+}

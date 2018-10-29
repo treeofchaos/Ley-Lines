@@ -1,0 +1,10 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+    "model": "leylines:conduit_core"
+  },
+  "variants": {
+    "normal": [{}],
+    "inventory": [{}]
+  }
+}

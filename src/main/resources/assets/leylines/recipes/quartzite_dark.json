@@ -1,0 +1,20 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " Q ",
+        "QIQ",
+        " Q "
+    ],
+    "key": {
+        "Q": {
+            "item": "leylines:quartzite"
+        },
+                "I": {
+            "type": "forge:ore_dict", "ore":"dyeBlack" 
+        }
+      },
+    "result": {
+        "item": "leylines:quartzite_dark",
+        "count": 4
+    }
+}

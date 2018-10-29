@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "QQ",
+        "QQ"
+    ],
+    "key": {
+        "Q": {
+            "item": "leylines:quartzite"
+        }
+        },
+    "result": {
+        "item": "leylines:quartzite_bricks",
+        "count": 4
+    }
+   }
+}
